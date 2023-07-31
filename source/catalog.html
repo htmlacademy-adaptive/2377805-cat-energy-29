@@ -18,108 +18,224 @@
           <li class="header-nav__item">
             <a class="header-nav__link">Главная</a>
           </li>
-          <li class="header-nav__item">
+          <li class="header-nav__item header-nav__item--current">
             <a class="header-nav__link">Каталог продукции</a>
           </li>
-          <li class="header-nav__item header-nav__item--current">
+          <li class="header-nav__item">
             <a class="header-nav__link">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-container">
-      <h1 class="page-container__title">Подбор программы</h1>
-      <p class="page-container__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="page-container_form form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__fieldset">
-          <legend class="form__fieldset-title visually-hidden">Информация о коте.</legend>
-          <label class="form__label">Имя:*
-            <input class="form__input input input--text" type="text" name="cats-name" value="БАРСИК" required>
-          </label>
-          <label class="form__label">Вес (кг):*
-            <input class="form__input input input--number" type="number" name="cats-weight" value="7" required>
-          </label>
-          <label class="form__label">Возраст (лет):
-            <input class="form__input input input--number" type="number" name="cats-age" value="7">
-          </label>
-        </fieldset>
-        <fieldset class="form__fieldset form-programs">
-          <legend class="form__fieldset-title visually-hidden">Выбор типа программы.</legend>
-          <ul class="form-programs__list">
-            <li class="form-programs__item">
-              <label class="form-programs__label">
-                <input class="form-programs__input input" type="radio" name="programs-type" value="slim" checked>
-                <span class="form-programs__mark-radio"></span>
-                <span class="form-programs__description">Похудение</span>
-              </label>
-            </li>
-            <li class="form-programs__item">
-              <label class="form-programs__label">
-                <input class="form-programs__input input" type="radio" name="programs-type" value="pro">
-                <span class="form-programs__mark-radio"></span>
-                <span class="form-programs__description">Набор массы</span>
-              </label>
-            </li>
-            <li class="form-programs__item">
-              <label class="form-programs__label">
-                <input class="form-programs__input input" type="radio" name="programs-type" value="help">
-                <span class="form-programs__mark-radio"></span>
-                <span class="form-programs__description">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="form__fieldset-title">Контактные данные (владелец кота)</legend>
-          <label class="form__label">E-mail:*
-            <input class="form__input input input--email" type="email" name="owners-email" value="kuklachev@gmail.com" required>
-          </label>
-          <label class="form__label">Телефон:*
-            <input class="form__input input input--tel" type="tel" name="owners-tel" value="8 (960) 900-60-90" required>
-          </label>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="form__fieldset-title">Комментарий</legend>
-          <textarea class="form__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
-        </fieldset>
-        <fieldset class="form__fieldset form-additions">
-          <legend class="form__fieldset-title">Дополнительно</legend>
-          <ul class="form-additions__list">
-            <li class="form-additions__item">
-              <label class="form-additions__label">
-                <input class="form-additions__input visually-hidden" type="checkbox" name="sweetener" checked>
-                <span class="form-additions__mark"></span>
-                <span class="form-additions__description">Сахарозаменитель</span>
-              </label>
-            </li>
-            <li class="form-additions__item">
-              <label class="form-additions__label">
-                <input class="form-additions__input visually-hidden" type="checkbox" name="drinking-water">
-                <span class="form-additions__mark"></span>
-                <span class="form-additions__description">Питьевая вода</span>
-              </label>
-            </li>
-            <li class="form-additions__item">
-              <label class="form-additions__label">
-                <input class="form-additions__input visually-hidden" type="checkbox" name="milk">
-                <span class="form-additions__mark"></span>
-                <span class="form-additions__description">Молоко</span>
-              </label>
-            </li>
-            <li class="form-additions__item">
-              <label class="form-additions__label">
-                <input class="form-additions__input visually-hidden" type="checkbox" name="vitamins">
-                <span class="form-additions__mark"></span>
-                <span class="form-additions__description">Витамины</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="form__button-container">
-          <button class="form__button button" type="submit">Отправить заявку</button>
-          <p class="form__tooltip">* — Обязательные поля</p>
-        </div>
-      </form>
+      <h1 class="page-container__title">Каталог продукции</h1>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог продукции Cat Energy с описанием и ценой.</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog-item">
+            <div class="catalog-item__container">
+              <img class="catalogue-item__image" src="#" width="68" height="86" alt="Питание Cat Energy Pro 500 грамм со вкусом курицы">
+              <div class="catalog-item__wrapper">
+                <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
+                <ul class="catalog-item__properties">
+                  <li class="catalog-item__property">
+                    <span>Масса</span>
+                    <span>500 г</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Вкус</span>
+                    <span>Курица</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Цена</span>
+                    <span>700 ₽</span>
+                  </li>
+              </div>
+            </div>
+            <button class="catalogue-item__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item catalog-item">
+            <div class="catalog-item__container">
+              <img class="catalogue-item__image" src="#" width="84" height="100" alt="Питание Cat Energy Pro 1000 грамм со вкусом курицы">
+              <div class="catalog-item__wrapper">
+                <h3 class="catalog-item__title">Cat Energy PRO 1000 г</h3>
+                <ul class="catalog-item__properties">
+                  <li class="catalog-item__property">
+                    <span>Масса</span>
+                    <span>1000 г</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Вкус</span>
+                    <span>Курица</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Цена</span>
+                    <span>1000 ₽</span>
+                  </li>
+              </div>
+            </div>
+            <button class="catalogue-item__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item catalog-item">
+            <div class="catalog-item__container">
+              <img class="catalogue-item__image" src="#" width="68" height="86" alt="Питание Cat Energy Pro 500 грамм со вкусом рыбы">
+              <div class="catalog-item__wrapper">
+                <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
+                <ul class="catalog-item__properties">
+                  <li class="catalog-item__property">
+                    <span>Масса</span>
+                    <span>500 г</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Вкус</span>
+                    <span>Рыба</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Цена</span>
+                    <span>700 ₽</span>
+                  </li>
+              </div>
+            </div>
+            <button class="catalogue-item__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item catalog-item">
+            <div class="catalog-item__container">
+              <img class="catalogue-item__image" src="#" width="84" height="100" alt="Питание Cat Energy Pro 1000 грамм со вкусом рыбы">
+              <div class="catalog-item__wrapper">
+                <h3 class="catalog-item__title">Cat Energy PRO 1000 г</h3>
+                <ul class="catalog-item__properties">
+                  <li class="catalog-item__property">
+                    <span>Масса</span>
+                    <span>1000 г</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Вкус</span>
+                    <span>Рыба</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Цена</span>
+                    <span>1000 ₽</span>
+                  </li>
+              </div>
+            </div>
+            <button class="catalogue-item__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item catalog-item">
+            <div class="catalog-item__container">
+              <img class="catalogue-item__image" src="#" width="68" height="86" alt="Питание Cat Energy Slim 500 грамм со вкусом гречки">
+              <div class="catalog-item__wrapper">
+                <h3 class="catalog-item__title">Cat Energy Slim 500 г</h3>
+                <ul class="catalog-item__properties">
+                  <li class="catalog-item__property">
+                    <span>Масса</span>
+                    <span>500 г</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Вкус</span>
+                    <span>Гречка</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Цена</span>
+                    <span>400 ₽</span>
+                  </li>
+              </div>
+            </div>
+            <button class="catalogue-item__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item catalog-item">
+            <div class="catalog-item__container">
+              <img class="catalogue-item__image" src="#" width="84" height="100" alt="Питание Cat Energy Slim 1000 грамм со вкусом гречки">
+              <div class="catalog-item__wrapper">
+                <h3 class="catalog-item__title">Cat Energy Slim 1000 г</h3>
+                <ul class="catalog-item__properties">
+                  <li class="catalog-item__property">
+                    <span>Масса</span>
+                    <span>1000 г</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Вкус</span>
+                    <span>Гречка</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Цена</span>
+                    <span>700 ₽</span>
+                  </li>
+              </div>
+            </div>
+            <button class="catalogue-item__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item catalog-item">
+            <div class="catalog-item__container">
+              <img class="catalogue-item__image" src="#" width="68" height="86" alt="Питание Cat Energy Slim 500 грамм со вкусом риса">
+              <div class="catalog-item__wrapper">
+                <h3 class="catalog-item__title">Cat Energy Slim 500 г</h3>
+                <ul class="catalog-item__properties">
+                  <li class="catalog-item__property">
+                    <span>Масса</span>
+                    <span>500 г</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Вкус</span>
+                    <span>Рис</span>
+                  </li>
+                  <li class="catalog-item__property">
+                    <span>Цена</span>
+                    <span>500 ₽</span>
+                  </li>
+              </div>
+            </div>
+            <button class="catalogue-item__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item catalog-item catalog-item--more">
+            <div class="catalog-item__container">
+              <a class="catalogue-item__link" href="#"></a>
+              <div class="catalog-item__wrapper">
+                <h3 class="catalog-item__title">Показать еще 100500 товаров</h3>
+                <p class="catalog-item__property">На самом деле вкусов гораздо больше!</p>
+              </div>
+            </div>
+            <a class="catalogue-item__button button button--grey" href="#">Показать все</a>
+          </li>
+        </ul>
+      </section>
+      <section class="additions">
+        <h2 class="additions__title">Дополнительные товары</h2>
+        <ul class="additions__list">
+          <li class="additions_item addition-item">
+            <p class="addition-item__title">Сахарозаменитель</p>
+            <div class="addition-item__property-wrapper">
+              <span>1 упаковка (100 г)</span>
+              <span>200 ₽</span>
+            </div>
+            <button class="addition-item__button button" type="button">Заказать</button>
+          </li>
+          <li class="additions_item addition-item">
+            <p class="addition-item__title">питьевая вода</p>
+            <div class="addition-item__property-wrapper">
+              <span>5 литров</span>
+              <span>50 ₽</span>
+            </div>
+            <button class="addition-item__button button" type="button">Заказать</button>
+          </li>
+          <li class="additions_item addition-item">
+            <p class="addition-item__title">Молоко</p>
+            <div class="addition-item__property-wrapper">
+              <span>1 литр</span>
+              <span>100 ₽</span>
+            </div>
+            <button class="addition-item__button button" type="button">Заказать</button>
+          </li>
+          <li class="additions_item addition-item">
+            <p class="addition-item__title">Витамины</p>
+            <div class="addition-item__property-wrapper">
+              <span>1 упаковка (30 г)</span>
+              <span>300 ₽</span>
+            </div>
+            <button class="addition-item__button button" type="button">Заказать</button>
+          </li>
+        </ul>
+        <p class="additions__ads">Закажите все и получите чехол для кота в подарок!</p>
+      </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты.</h2>
         <div class="contacts__invitation-wrapper contacts-invitation">
