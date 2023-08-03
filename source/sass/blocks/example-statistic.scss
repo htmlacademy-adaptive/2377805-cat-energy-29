@@ -1,0 +1,42 @@
+.example-statistic {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example-statistic__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 70px;
+}
+
+.example-statistic__measure {
+  margin: 0;
+  width: 124px;
+  height: 56px;
+  text-align: center;
+
+  @include font-size-height (24px, 56px);
+  text-transform: uppercase;
+  font-family: $osvald-font;
+  color: $basic-black;
+  background-image: url("../../img/weight-back.svg");
+}
+
+.example-statistic__description {
+  margin: 0;
+  width: 77px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+
+  @include font-size-height (12px, 12px);
+}
+
+.example__slider {
+  width: 280px;
+  height: 256px;
+}

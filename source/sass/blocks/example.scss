@@ -1,0 +1,26 @@
+.example {
+  padding: 25px 20px 40px;
+  background-color: #eaeaea;
+}
+
+.example__text {
+  margin: 40px 0 20px 0;
+
+  @include font-size-height (14px, 18px);
+}
+
+.example__statistic {
+  margin-bottom: 20px;
+}
+
+
+.example__expences {
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  font-family: $osvald-font;
+
+  @include font-size-height (14px, 20px);
+  color: $basic-black;
+  text-align: center;
+}
+

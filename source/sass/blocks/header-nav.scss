@@ -1,0 +1,25 @@
+.header-nav {
+  width: 24px;
+  height: 24px;
+}
+
+.header-nav__list {
+  @include style-list-none;
+}
+
+.header-nav__item {
+  font-family: $osvald-font;
+  color: $basic-black;
+  height: 64px;
+
+  @include font-size-height (20px, 20px);
+}
+
+.header-nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: $basic-black;
+}

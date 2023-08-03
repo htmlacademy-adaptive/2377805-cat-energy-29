@@ -1,0 +1,16 @@
+.button {
+  background-color: $basic-green;
+  font-family: $osvald-font;
+  color: $basic-white;
+
+  @include font-size-height (14px, 18px);
+  text-decoration: none;
+}
+
+.section-title {
+  @include font-size-height (36px, 40px);
+  font-family: $osvald-font;
+  color: $basic-black;
+  font-weight: 400;
+  margin: 0;
+}

@@ -7,29 +7,33 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип бренда Cat Energy.">
-        <img class="main-header__logo-name" src="#" width="101" height="18" alt="Текстовый логотип бренда Cat Energy.">
-      </a>
-      <nav class="header-nav">
-        <button class="header-nav__toggle" type="button">
+      <div class="main-header__wrapper">
+        <a class="main-header__link" href="#">
+          <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип бренда Cat Energy.">
+        </a>
+        <a class="main-header__link" href="#"></a>
+          <img class="main-header__logo-name" src="#" width="101" height="18" alt="Текстовый логотип бренда Cat Energy.">
+        </a>
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <ul class="header-nav__list">
-          <li class="header-nav__item header-nav__item--current">
-            <a class="header-nav__link" href="#">Главная</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="header-nav">
+          <ul class="header-nav__list visually-hidden">
+            <li class="header-nav__item header-nav__item--current">
+              <a class="header-nav__link" href="#">Главная</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-container">
       <h1 class="visually-hidden">Сайт функционального питания для котов Cat Energy.</h1>
@@ -74,7 +78,7 @@
       <section class="example">
         <h2 class="example__title section-title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__statistic-container example-statistic">
+        <div class="example__statistic example-statistic">
           <div class="example-statistic__wrapper">
             <p class="example-statistic__measure">5 кг</p>
             <p class="example-statistic__description">снижение веса</p>
@@ -83,8 +87,8 @@
             <p class="example-statistic__measure">60 дней</p>
             <p class="example-statistic__description">затрачено времени</p>
           </div>
-          <p class="example-statistic__expences">Затраты на питание: 15 000 руб.</p>
         </div>
+        <p class="example__expences">Затраты на питание: 15 000 руб.</p>
         <div class="example__slider slider">
           <img class="slider__image" src="#" width="280" height="256" alt="Фото кота до похудения.">
           <img class="slider__image" src="#" width="280" height="256" alt="Фото кота после похудения.">
@@ -97,25 +101,25 @@
     <footer class="main-footer">
       <section class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты.</h2>
-        <div class="contacts__invitation-wrapper contacts-invitation">
-          <p class="contacts-invitation__text">приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts-invitation__address address">
-            <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="address__city">Санкт-Петербург</span>
+        <div class="contacts__invitation-wrapper">
+          <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address">
+            <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__city">Санкт-Петербург</span>
           </address>
         </div>
         <div class="contacts__map-wrapper">
-          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65094656387834!2d30.322403669655976!3d59.93871649843221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sil!4v1690831467137!5m2!1sru!2sil" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7692.423439456909!2d30.317824948655435!3d59.93868527496384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sil!4v1691098209357!5m2!1sru!2sil" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <!--Или iframe или картинка-->
           <img class="contacts__map" src="#" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
         </div>
       </section>
-      <section class="main-footer__home home">
+      <section class="main-footer__links footer-links">
         <h2 class="visually-hidden">Мы в социальных сетях.</h2>
-        <span class="home__link">
-          <img class="home__logo-name" src="#" width="128" height="24" alt="Текстовый логотип бренда Cat Energy.">
+        <span class="footer-links__home">
+          <img class="footer-links__logo" src="#" width="128" height="24" alt="Текстовый логотип бренда Cat Energy.">
         </span>
-        <ul class="main-footer__socials social-networks">
+        <ul class="footer-links__socials social-networks">
           <li class="social-networks__item">
             <a class="social-networks__link" href="https://vk.com/htmlacademy">
               <svg class="social-networks__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none">
@@ -134,26 +138,28 @@
           </li>
           <li class="social-networks__item">
             <a class="social-networks__link" href="https://t.me/htmlacademy">
-              <svg class="social-networks__link" xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none">
+              <svg class="social-networks__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4608 3.15291C23.6393 3.30222 23.7255 3.5349 23.6872 3.76448L21.0611 19.5214C21.0244 19.7411 20.8789 19.9273 20.6745 20.0159C20.47 20.1045 20.2346 20.0833 20.0493 19.9597L12.1708 14.7074C12.0177 14.6054 11.9145 14.4437 11.8862 14.2619C11.858 14.08 11.9074 13.8947 12.0223 13.751L14.633 10.4877L10.273 13.3944C10.077 13.525 9.82597 13.5407 9.61524 13.4353L4.36293 10.8092C4.12769 10.6915 3.98535 10.4449 4.0012 10.1824C4.01705 9.91983 4.18804 9.6921 4.43573 9.60364L22.8188 3.03826C23.038 2.95998 23.2822 3.00359 23.4608 3.15291ZM6.32626 10.3228L9.86168 12.0905L17.4231 7.0495C17.6925 6.86994 18.0525 6.91349 18.2712 7.1521C18.49 7.3907 18.5022 7.75314 18.3 8.00591L13.495 14.0121L19.9328 18.3039L22.2083 4.65058L6.32626 10.3228Z" fill="#666666"/>
               </svg>
               <span class="visually-hidden">Логотип телеграмм.</span>
             </a>
           </li>
         </ul>
-        <div class="main-footer__academy footer-academy">
-          <a class="footer-academy__link" href="#">
-            <span class="footer-academy__text">HTML Academy</span>
-            <svg class="footer-academy__logo" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34" fill="none">
-              <g clip-path="url(#clip0_93075_226)">
-                <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_93075_226">
-                  <rect width="27" height="34" fill="white"/>
-                </clipPath>
-              </defs>
-            </svg>
+        <div class="footer-links__academy">
+          <a class="footer-links__academy-link" href="#">
+            <div class="footer-links__academy-wrapper">
+              <span class="footer-links__academy-text">HTML Academy</span>
+              <svg class="footer-links__academy-logo" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34" fill="none">
+                <g clip-path="url(#clip0_93075_226)">
+                  <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_93075_226">
+                    <rect width="27" height="34" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
           </a>
         </div>
       </section>
