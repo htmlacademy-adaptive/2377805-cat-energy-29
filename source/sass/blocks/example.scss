@@ -1,6 +1,12 @@
 .example {
-  padding: 25px 20px 40px;
   background-color: #eaeaea;
+}
+
+.example__wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 25px 20px 40px;
 }
 
 .example__text {

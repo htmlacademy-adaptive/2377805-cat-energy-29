@@ -5,6 +5,9 @@ body {
   @include font-size-height (14px, 18px);
   font-style: normal;
   font-weight: 400;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 html {

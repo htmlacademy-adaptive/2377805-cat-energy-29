@@ -1,15 +1,24 @@
 .hero {
-  margin: 0 auto;
   color: $basic-white;
+  font-family: $osvald-font;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 305px;
+}
+
+.hero__wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: $osvald-font;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index-background-desktop.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 320px 305px;
-  padding: 0 20px 0 20px;
 }
 
 .hero__title {
