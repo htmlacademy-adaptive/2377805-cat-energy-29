@@ -2,6 +2,7 @@
   background-color: $basic-green;
   font-family: $osvald-font;
   color: $basic-white;
+  text-transform: uppercase;
 
   @include font-size-height (14px, 18px);
   text-decoration: none;
@@ -13,9 +14,31 @@
 }
 
 .section-title {
-  @include font-size-height (36px, 40px);
   font-family: $osvald-font;
   color: $basic-black;
   font-weight: 400;
   margin: 0;
+}
+
+.subtitle {
+  display: flex;
+}
+
+.subtitle__text {
+  font-family: $osvald-font;
+  color: $basic-black;
+  font-weight: 400;
+  margin: 0;
+  position: relative;
+  background-color: $basic-white;
+  padding-right: 20px;
+
+  &::before {
+    @include pseudo;
+    left: 0;
+    top: calc(50% + 4px);
+    border: 1px solid $basic-green;
+    width: 700px;
+    z-index: -1;
+  }
 }

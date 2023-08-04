@@ -7,6 +7,10 @@
   padding: 20px;
 }
 
+.advantages__title {
+  @include font-size-height (36px, 40px);
+}
+
 .advantages__list {
   @include style-list-none;
   @include font-size-height (14px, 18px);

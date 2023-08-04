@@ -2,6 +2,10 @@
   background-color: #eaeaea;
 }
 
+.example__title {
+  @include font-size-height (36px, 40px);
+}
+
 .example__wrapper {
   width: 320px;
   box-sizing: border-box;
