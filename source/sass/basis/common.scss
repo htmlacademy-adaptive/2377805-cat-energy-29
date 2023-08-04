@@ -5,6 +5,11 @@
 
   @include font-size-height (14px, 18px);
   text-decoration: none;
+
+  &--grey {
+    background-color: #f2f2f2;
+    color: $dark-grey;
+  }
 }
 
 .section-title {

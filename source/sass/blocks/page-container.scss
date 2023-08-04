@@ -1,3 +1,18 @@
 .page-container {
   flex-grow: 1;
 }
+
+.page-container__title-wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.page-container__title {
+  font-family: $osvald-font;
+
+  @include font-size-height (36px, 36px);
+  margin: 27px auto 41px 20px;
+  color: $basic-black;
+  font-weight: 400;
+}
