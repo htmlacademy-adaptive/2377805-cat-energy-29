@@ -6,13 +6,30 @@
   width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .page-container__title {
   font-family: $osvald-font;
 
   @include font-size-height (36px, 36px);
-  margin: 27px auto 41px 20px;
+  margin: 27px auto 41px 0;
   color: $basic-black;
   font-weight: 400;
+
+  &--form {
+    margin: 27px auto 37px 0;
+  }
+}
+
+.page-container__description {
+  margin: 0 0 39px 0;
+  text-transform: uppercase;
+  font-family: $osvald-font;
+  color: $basic-black;
+  padding-right: 54px;
+}
+
+.page-container__form {
+  margin: 0 auto;
 }

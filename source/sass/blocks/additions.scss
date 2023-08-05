@@ -18,7 +18,7 @@
 .additions__ads-wrapper {
   width: 280px;
   height: 290px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/catalog-background-desktop.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-desktop.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 280px 290px;
@@ -36,7 +36,7 @@
 
   &::before {
     @include pseudo;
-    background-image: url("../../img/icon_gift.svg");
+    background-image: url("../img/icon_gift.svg");
     width: 78px;
     height: 80px;
     left: 50%;
