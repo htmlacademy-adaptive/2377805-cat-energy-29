@@ -9,19 +9,19 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__link" href="#">
-          <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип бренда Cat Energy.">
+          <img class="main-header__logo-image" src="../img/logo-mobile.svg" width="33" height="38" alt="Логотип бренда Cat Energy.">
         </a>
-        <a class="main-header__link" href="#"></a>
-          <img class="main-header__logo-name" src="#" width="101" height="18" alt="Текстовый логотип бренда Cat Energy.">
+        <a class="main-header__link" href="#">
+          <img class="main-header__logo-name" src="../img/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип бренда Cat Energy.">
         </a>
         <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="main-header__toggle-line"></span>
+          <span class="main-header__toggle-line"></span>
+          <span class="main-header__toggle-line"></span>
         </button>
-        <nav class="header-nav">
-          <ul class="header-nav__list visually-hidden">
+        <nav class="header-nav visually-hidden">
+          <ul class="header-nav__list">
             <li class="header-nav__item">
               <a class="header-nav__link" href="index.html">Главная</a>
             </li>
@@ -42,19 +42,25 @@
       </div>
       <form class="page-container__form form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="form__fieldset" role="group" aria-labelledby="pseudolegend">
-          <h2 class="form__fieldset-title visually-hidden" id="pseudolegend">Информация о коте.</h2>
-          <label class="form__label">Имя:*
-            <input class="form__input input input--text" type="text" name="cats-name" placeholder="БАРСИК" required>
-          </label>
-          <label class="form__label">Вес (кг):*
-            <input class="form__input input input--number" type="number" name="cats-weight" placeholder="7" required>
-          </label>
-          <label class="form__label">Возраст (лет):
-            <input class="form__input input input--number" type="number" name="cats-age" placeholder="7">
-          </label>
+          <div class="form__fieldset-title-wrapper subtitle">
+            <h2 class="form__fieldset-title subtitle__text visually-hidden" id="pseudolegend">Информация о коте.</h2>
+          </div>
+          <div class="form__fieldset-input-wrapper">
+            <label class="form__label">Имя:*
+              <input class="form__input input input--text" type="text" name="cats-name" placeholder="БАРСИК" required>
+            </label>
+            <label class="form__label">Вес (кг):*
+              <input class="form__input input input--number" type="number" name="cats-weight" placeholder="7" required>
+            </label>
+            <label class="form__label">Возраст (лет):
+              <input class="form__input input input--number" type="number" name="cats-age" placeholder="7">
+            </label>
+          </div>
         </div>
         <div class="form__fieldset form-radio" role="group" aria-labelledby="pseudolegend">
-          <h2 class="form__fieldset-title visually-hidden" id="pseudolegend">Выбор типа программы.</h2>
+          <div class="form__fieldset-title-wrapper subtitle">
+            <h2 class="form__fieldset-title subtitle__text visually-hidden" id="pseudolegend">Выбор типа программы.</h2>
+          </div>
           <ul class="form-programs__list">
             <li class="form-programs__item">
               <label class="form-programs__label">
@@ -80,7 +86,7 @@
           </ul>
         </div>
         <div class="form__fieldset" role="group" aria-labelledby="pseudolegend">
-          <div class="subtitle">
+          <div class="form__fieldset-title-wrapper--owner subtitle">
             <h2 class="form__fieldset-title subtitle__text" id="pseudolegend">Контактные данные (владелец кота)</h2>
           </div>
           <label class="form__label">E-mail:*
@@ -93,14 +99,14 @@
           </label>
         </div>
         <div class="form__fieldset" role="group" aria-labelledby="pseudolegend">
-          <div class="subtitle">
+          <div class="form__fieldset-title-wrapper--comments subtitle">
             <h2 class="form__fieldset-title subtitle__text" id="pseudolegend">Комментарий</h2>
           </div>
           <label class="form__fieldset-title subtitle" for="textarea_comment"></label> <!--ВОЗМОЖНО ЗАМЕНИТЬ НА ЛЭЙБЛ-->
           <textarea class="form__textarea" id="textarea_comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
         <div class="form__fieldset form-checkbox" role="group" aria-labelledby="pseudolegend">
-          <div class="subtitle">
+          <div class="form__fieldset-title-wrapper--additions subtitle">
             <h2 class="form__fieldset-title subtitle__text" id="pseudolegend">Дополнительно</h2>
           </div>
           <ul class="form-additions__list">

@@ -3,7 +3,9 @@
 @import "./basis/mixins.scss";
 @import "./basis/visually-hidden.scss";
 @import "./basis/global.scss";
-@import "./basis//common.scss";
+@import "./blocks/button.scss";
+@import "./blocks/section-title.scss";
+@import "./blocks/subtitle.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/header-nav.scss";
 @import "./blocks/page-container.scss";
@@ -22,3 +24,4 @@
 @import "./blocks/additions.scss";
 @import "./blocks/addition-item.scss";
 @import "./blocks/form.scss";
+@import "./blocks/input.scss";
