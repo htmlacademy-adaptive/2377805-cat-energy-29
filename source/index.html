@@ -2,35 +2,38 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__link" href="#">
-          <img class="main-header__logo-image" src="../img/logo-mobile.svg" width="33" height="38" alt="Логотип бренда Cat Energy.">
-        </a>
-        <a class="main-header__link" href="#">
-          <img class="main-header__logo-name" src="../img/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип бренда Cat Energy.">
-        </a>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <span class="main-header__toggle-line"></span>
-          <span class="main-header__toggle-line"></span>
-          <span class="main-header__toggle-line"></span>
-        </button>
-        <nav class="header-nav">
+      <div class="main-header__container">
+        <div class="main-header__wrapper">
+          <a class="main-header__link" href="#">
+            <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип бренда Cat Energy.">
+            <img class="main-header__logo-name" src="img/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип бренда Cat Energy.">
+          </a>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <span class="main-header__toggle-line"></span>
+            <span class="main-header__toggle-line"></span>
+            <span class="main-header__toggle-line"></span>
+          </button>
+        </div>
+        <nav class="main-header__nav header-nav">
           <ul class="header-nav__list">
-            <li class="header-nav__item header-nav__item--current">
-              <a class="header-nav__link" href="#">Главная</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="form.html">Подбор программы</a>
-            </li>
+            <div class="header-nav__item-wrapper">
+              <li class="header-nav__item header-nav__item--current">
+                <a class="header-nav__link" href="#">Главная</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="form.html">Подбор программы</a>
+              </li>
+            </div>
           </ul>
         </nav>
       </div>
