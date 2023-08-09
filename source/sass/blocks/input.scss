@@ -13,4 +13,10 @@
   &--number {
     appearance: textfield;
   }
+
+  &--email {
+    background-image: url("../img/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px top 13px;
+  }
 }

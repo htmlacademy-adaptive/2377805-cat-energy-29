@@ -1,12 +1,7 @@
-.catalog {
-  width: 320px;
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-
 .catalog__list {
   @include style-list-none;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   padding-top: 8px;
   padding-bottom: 11px;

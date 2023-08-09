@@ -5,25 +5,25 @@
 .page-container__title-wrapper {
   width: 320px;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 27px auto 41px;
   padding: 0 20px;
+
+  &--form {
+    margin: 27px auto 37px;
+  }
 }
 
 .page-container__title {
   font-family: $osvald-font;
 
   @include font-size-height (36px, 36px);
-  margin: 27px auto 41px 0;
   color: $basic-black;
   font-weight: 400;
-
-  &--form {
-    margin: 27px auto 37px 0;
-  }
+  margin: 0;
 }
 
 .page-container__description {
-  margin: 0 0 39px 0;
+  margin: 37px 0 39px 0;
   text-transform: uppercase;
   font-family: $osvald-font;
   color: $basic-black;

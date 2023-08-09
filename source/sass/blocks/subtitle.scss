@@ -1,4 +1,20 @@
 .subtitle {
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    left: 0;
+    top: 16px;
+    border: 1px solid $basic-green;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.subtitle-wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
   display: flex;
 }
 
@@ -7,16 +23,9 @@
   color: $basic-black;
   font-weight: 400;
   margin: 0;
-  position: relative;
   background-color: $basic-white;
-  padding-right: 20px;
+  padding: 0 20px;
+  max-width: 182px;
 
-  &::before {
-    @include pseudo;
-    left: 0;
-    top: calc(50% + 4px);
-    border: 1px solid $basic-green;
-    width: 700px;
-    z-index: -1;
-  }
+  @include font-size-height (24px, 26px);
 }

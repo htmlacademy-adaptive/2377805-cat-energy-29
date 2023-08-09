@@ -1,7 +1,4 @@
 .catalog-item {
-  width: 320px;
-  box-sizing: border-box;
-  padding: 11px 20px 14px;
   position: relative;
 
   &::before {
@@ -27,6 +24,10 @@
 }
 
 .catalog-item__container {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 11px 20px 14px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
