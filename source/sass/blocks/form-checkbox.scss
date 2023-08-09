@@ -1,0 +1,51 @@
+.form-checkbox__title-wrapper {
+  margin-bottom: 34px;
+}
+
+.form-checkbox__list {
+  font-family: $osvald-font;
+
+
+  @include font-size-height (16px, 18px);
+  @include style-list-none;
+  text-transform: uppercase;
+}
+
+.form-checkbox__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 0 20px;
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.form-checkbox__label {
+  display: flex;
+  align-items: center;
+}
+
+.form-checkbox__input {
+  &:checked + {
+    .form-checkbox__mark::before {
+      @include pseudo;
+      width: 26px;
+      height: 26px;
+      background-image: url("../../img/tick-checkbox.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.form-checkbox__mark {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+  position: relative;
+}
+
+.form-checkbox__description {
+  padding-left: 15px;
+}

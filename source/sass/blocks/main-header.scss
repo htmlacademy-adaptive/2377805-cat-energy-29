@@ -1,0 +1,38 @@
+.main-header {
+  background-color: $basic-white;
+}
+
+.main-header__wrapper {
+  margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 13px 20px 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__logo-image {
+  display: block;
+}
+
+.main-header__logo-name {
+  display: block;
+}
+
+.main-header__toggle {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 3px 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.main-header__toggle-line {
+  width: 22px;
+  border: 1px solid $basic-black;
+}

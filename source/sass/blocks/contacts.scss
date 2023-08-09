@@ -1,0 +1,38 @@
+.contacts--grey {
+  background-color: #f2f2f2;
+}
+
+.contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contacts__container {
+  background-color: $basic-white;
+  padding: 26px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &--grey {
+    background-color: #f2f2f2;
+  }
+}
+
+.contacts__text {
+  font-family: $osvald-font;
+
+  @include font-size-height (16px, 20px);
+  text-transform: uppercase;
+  margin: 0;
+  color: $third-black;
+}
+
+.contacts__address {
+  @include font-size-height (14px, 20px);
+  font-style: normal;
+}
+
+.contacts__map {
+  height: 362px;
+  width: 320px;
+}

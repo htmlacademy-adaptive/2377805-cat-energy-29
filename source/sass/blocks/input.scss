@@ -1,0 +1,22 @@
+.input {
+  font-family: $osvald-font;
+
+  @include font-size-height (16px, 18px);
+  text-transform: uppercase;
+  padding: 14px 15px 13px;
+  border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    color: $dark-grey;
+  }
+
+  &--number {
+    appearance: textfield;
+  }
+
+  &--email {
+    background-image: url("../img/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px top 13px;
+  }
+}

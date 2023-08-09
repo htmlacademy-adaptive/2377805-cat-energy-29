@@ -1,0 +1,16 @@
+body {
+  color: $dark-grey;
+  font-family: $lato-font;
+
+  @include font-size-height (14px, 18px);
+  font-style: normal;
+  font-weight: 400;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}

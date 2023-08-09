@@ -1,0 +1,19 @@
+.programs {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  color: $dark-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $lato-font;
+  padding: 20px;
+}
+
+.programs__list {
+  @include style-list-none;
+}
+
+.programs__item:not(:last-child) {
+  margin-bottom: 20px;
+}

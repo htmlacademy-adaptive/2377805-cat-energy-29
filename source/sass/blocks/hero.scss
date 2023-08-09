@@ -1,0 +1,51 @@
+.hero {
+  color: $basic-white;
+  font-family: $osvald-font;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 305px;
+}
+
+.hero__wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 320px 305px;
+}
+
+.hero__title {
+  margin: 27px 15px 25px 15px;
+  width: 250px;
+  font-weight: 400;
+  text-align: center;
+
+  @include font-size-height (36px, 36px);
+}
+
+.hero__slogan {
+  margin: 0;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+
+  @include font-size-height (14px, 14px);
+}
+
+.hero__image {
+  margin-bottom: 3px;
+  display: block;
+}
+
+.hero__button {
+  width: 280px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 8px 44px 8px 44px;
+}

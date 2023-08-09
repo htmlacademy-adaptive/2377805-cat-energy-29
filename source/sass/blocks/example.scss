@@ -1,0 +1,41 @@
+.example {
+  background-color: #eaeaea;
+}
+
+.example__title {
+  @include font-size-height (36px, 40px);
+}
+
+.example__wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 25px 20px 40px;
+}
+
+.example__text {
+  margin: 40px 0 20px 0;
+
+  @include font-size-height (14px, 18px);
+}
+
+.example__statistic {
+  margin-bottom: 20px;
+}
+
+
+.example__expences {
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  font-family: $osvald-font;
+
+  @include font-size-height (14px, 20px);
+  color: $basic-black;
+  text-align: center;
+}
+
+.example__slider {
+  width: 280px;
+  height: 256px;
+}
+

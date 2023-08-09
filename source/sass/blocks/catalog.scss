@@ -1,0 +1,9 @@
+.catalog__list {
+  @include style-list-none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  padding-bottom: 11px;
+  gap: 19px;
+}
