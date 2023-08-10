@@ -10,8 +10,10 @@
     color: $dark-grey;
   }
 
-  &--number {
-    appearance: textfield;
+  &--number::-webkit-outer-spin-button,
+  &--number::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
   }
 
   &--email {
