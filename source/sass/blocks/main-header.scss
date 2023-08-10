@@ -1,5 +1,6 @@
 .main-header {
   background-color: $basic-white;
+  position: relative;
 }
 
 .main-header__container {
@@ -7,10 +8,23 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    box-sizing: border-box;
     padding: 25px 34px 25px 30px;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1220px;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 55px;
+    transform: translateX(-50%);
     justify-content: space-between;
+    z-index: 1;
   }
 }
 
@@ -24,13 +38,14 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
     width: auto;
-    box-sizing: border-box;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
+    margin: 0 206px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -83,9 +98,8 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    bottom: 0;
-    left: 0;
+    position: static;
     transform: translateX(0);
+    width: unset;
   }
 }

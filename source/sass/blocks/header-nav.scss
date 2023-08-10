@@ -1,8 +1,7 @@
 .header-nav__list {
   @include style-list-none;
-}
+  text-transform: uppercase;
 
-.header-nav__item-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
@@ -12,11 +11,23 @@
 
 .header-nav__item {
   font-family: $osvald-font;
-  color: $basic-black;
   border-top: 1px solid #e6e6e6;
   height: 65px;
+  min-width: 320px;
 
   @include font-size-height (20px, 20px);
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    height: unset;
+    min-width: unset;
+
+    @include font-size-height (18px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-size-height (20px, 30px);
+  }
 
   &:last-child {
     border-top: 1px solid #e6e6e6;
@@ -26,13 +37,6 @@
       border-top: none;
       border-bottom: none;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    border-top: none;
-    border-bottom: none;
-
-    @include font-size-height (18px, 24px);
   }
 }
 
@@ -50,13 +54,16 @@
     border: 1px solid $basic-green;
     width: calc(100% - 10px);
   }
+
+  @media (min-width: $desktop-width) {
+    border: 1px solid $basic-white;
+  }
 }
 
 .header-nav__link {
   background-color: $basic-white;
   min-width: 320px;
   box-sizing: border-box;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +74,12 @@
   padding: 0 5px;
 
   @media (min-width: $tablet-width) {
-    min-width: auto;
-    height: auto;
+    min-width: unset;
+    height: unset;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
   }
 }
