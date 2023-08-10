@@ -1,26 +1,86 @@
 .example {
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient($basic-white 0%, $basic-white 57.26%, #eaeaea 57.26%, #eaeaea 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient($basic-white 0%, $basic-white 22.74%, #eaeaea 22.74%, #eaeaea 100%);
+  }
 }
 
-.example__title {
-  @include font-size-height (36px, 40px);
-}
-
-.example__wrapper {
+.example__container {
   width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 25px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+    min-width: 768px;
+    padding: 45px 30px 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    padding: 0 110px 85px;
+    display: grid;
+    grid-template-columns: 1fr 560px;
+    gap: 227px;
+  }
+}
+
+.example__title {
+  @include font-size-height (36px, 40px);
+  margin: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-height (60px, 60px);
+    margin: 0 0 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 146px 0;
+  }
 }
 
 .example__text {
-  margin: 40px 0 20px 0;
+  margin: 0 0 20px 0;
 
-  @include font-size-height (14px, 18px);
+  @media (min-width: $tablet-width) {
+    margin: 0 0 55px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 69px 0;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 99px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0;
+  }
 }
 
 .example__statistic {
-  margin-bottom: 20px;
+  margin: 0 0 34px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 60px 0;
+  }
 }
 
 
@@ -32,10 +92,38 @@
   @include font-size-height (14px, 20px);
   color: $basic-black;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    @include font-size-height (20px, 20px);
+    width: 174px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: unset;
+    text-align: left;
+  }
+}
+
+.example__expences-price {
+  @media (min-width: $desktop-width) {
+    margin-left: 63px;
+  }
 }
 
 .example__slider {
-  width: 280px;
+  margin: 0 auto;
   height: 256px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 74px;
+    height: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 

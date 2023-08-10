@@ -1,6 +1,15 @@
 .example-statistic {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    gap: 42px;
+  }
 }
 
 .example-statistic__wrapper {
@@ -8,30 +17,62 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 70px;
+  height: 56px;
+
+  @media (min-width: $tablet-width) {
+    height: 72px;
+  }
 }
 
 .example-statistic__measure {
   margin: 0;
-  width: 124px;
-  height: 56px;
+  width: 122px;
+  height: 54px;
   text-align: center;
 
-  @include font-size-height (24px, 56px);
+  @include font-size-height (24px, 54px);
   text-transform: uppercase;
   font-family: $osvald-font;
   color: $basic-black;
-  background-image: url("../img/weight-back.svg");
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    height: 70px;
+
+    @include font-size-height (30px, 70px);
+  }
 }
 
 .example-statistic__description {
   margin: 0;
   width: 77px;
+  background-color: #eaeaea;
   text-align: center;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(60%);
   bottom: 0;
 
   @include font-size-height (12px, 12px);
+
+  @media (min-width: $tablet-width) {
+    width: 96px;
+    background-color: $basic-white;
+
+    @include font-size-height (14px, 14px);
+    padding: 0 9px;
+    transform: translateX(-50%) translateY(35%);
+  }
+
+  &--days {
+    @media (min-width: $tablet-width) {
+      width: 126px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+  }
 }

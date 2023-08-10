@@ -7,10 +7,26 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: unset;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
 }
 
 .footer-links__home {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 
   &::before {
     @include pseudo;
@@ -18,6 +34,10 @@
     left: 0;
     border-top: 1px solid #d9d9d9;
     width: 280px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -30,11 +50,19 @@
     left: 0;
     border-top: 1px solid #d9d9d9;
     width: 280px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .footer-links__academy {
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 }
 
 .footer-links__academy-wrapper {
