@@ -2,11 +2,32 @@
   @include style-list-none;
   text-transform: uppercase;
 
+  position: absolute;
+  bottom: -199px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
   @media (min-width: $tablet-width) {
+    position: static;
+    transform: translateX(0);
+    width: unset;
     display: flex;
     justify-content: flex-end;
     gap: 33px;
   }
+}
+
+.header-nav__list--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.header-nav__list--opened {
+  display: block;
 }
 
 .header-nav__item {
