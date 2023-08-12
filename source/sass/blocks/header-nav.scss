@@ -28,6 +28,8 @@
 
 .header-nav__list--nojs {
   display: block;
+  position: static;
+  transform: translateX(0);
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -36,6 +38,10 @@
 
 .header-nav__list--opened {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .header-nav__item {
@@ -91,8 +97,6 @@
 
 .header-nav__link {
   background-color: $basic-white;
-  min-width: 320px;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;

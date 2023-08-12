@@ -1,18 +1,13 @@
 .advantages {
-  width: 320px;
-  box-sizing: border-box;
-  margin: 0 auto 49px;
-  padding: 0 20px;
+  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    width: unset;
-    min-width: 768px;
-    margin: 0 auto 47px;
-    padding: 0;
+    margin-bottom: 47px;
     position: relative;
 
     &::before {
       @include pseudo;
+      left: 0;
       width: 100%;
       bottom: -47px;
       border-bottom: 1px solid #e6e6e6;
@@ -20,8 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1440px;
-    margin: 0 auto 69px;
+    margin-bottom: 69px;
 
     &::before {
       display: none;
@@ -34,7 +28,6 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-height (60px, 60px);
-    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +47,7 @@
     row-gap: 37px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 0 105px 0 30px;
+    padding-right: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,7 +55,7 @@
     row-gap: unset;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 0 106px 0 110px;
+    padding-right: -4px;
   }
 }
 

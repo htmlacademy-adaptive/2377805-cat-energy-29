@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   gap: 16px;
-  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: unset;

@@ -1,6 +1,7 @@
 .example-statistic {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 32px;
 
   @media (min-width: $tablet-width) {
     gap: 43px;

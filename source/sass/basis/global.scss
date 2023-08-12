@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  min-width: 320px;
 
   @media (min-width: $tablet-width) {
     @include font-size-height (16px, 24px);

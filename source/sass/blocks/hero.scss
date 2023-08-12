@@ -20,10 +20,6 @@
 }
 
 .hero__wrapper {
-  width: 320px;
-  box-sizing: border-box;
-  padding: 0 20px 0;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,26 +29,23 @@
   background-size: 320px 305px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    padding: 0 30px 0;
     background: unset;
     display: block;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    width: unset;
-    padding: 143px 110px 52px;
+    padding-top: 143px;
+    padding-bottom: 52px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: top left 50vw;
+    background-position: top right;
     background-size: 720px 694px;
   }
 }
 
 .hero__title {
   margin: 27px 15px 25px 15px;
-  width: 250px;
   font-weight: 400;
   text-align: center;
 
@@ -61,12 +54,13 @@
   @media (min-width: $tablet-width) {
     margin: 40px 0 40px 90px;
     text-align: unset;
-    width: 420px;
+
 
     @include font-size-height (60px, 60px);
   }
 
   @media (min-width: $desktop-width) {
+    width: 420px;
     margin: 119px 0 40px 80px;
   }
 }
@@ -107,7 +101,7 @@
 }
 
 .hero__button {
-  width: 280px;
+  width: 100%;
   box-sizing: border-box;
   text-align: center;
   padding: 8px 44px;
