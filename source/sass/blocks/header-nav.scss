@@ -18,8 +18,18 @@
   }
 }
 
+
+
 .header-nav__list--closed {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.header-nav__list--nojs {
+  display: block;
 
   @media (min-width: $tablet-width) {
     display: flex;
