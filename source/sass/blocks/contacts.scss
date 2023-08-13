@@ -87,6 +87,8 @@
 .contacts__map {
   height: 362px;
   width: 100%;
+  border: none;
+  display: block;
 
   @media (min-width: $tablet-width) {
     height: 400px;
