@@ -14,7 +14,7 @@
   @media (min-width: $desktop-width) {
     grid-template-rows: unset;
     grid-template-columns: 1fr 244px;
-    padding: 14px 0 16px 0;
+    padding: 14px 0 17px 0;
     border-right: none;
     border-left: none;
   }
@@ -36,7 +36,6 @@
     margin-bottom: 0;
     align-content: center;
   }
-
 }
 
 .addition-item__title {
@@ -52,10 +51,6 @@
     margin: 0;
 
     @include font-size-height (20px, 20px);
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -76,7 +71,8 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    grid-template-columns: 243px 82px;
+    justify-items: left;
   }
 }
 
@@ -87,10 +83,7 @@
   @media (min-width: $tablet-width) {
     padding: 8px 0;
 
-    @include font-size-height (16px, 26px);
-  }
-
-  @media (min-width: $desktop-width) {
-
+    @include font-size-height (16px, 24px);
   }
 }
+
