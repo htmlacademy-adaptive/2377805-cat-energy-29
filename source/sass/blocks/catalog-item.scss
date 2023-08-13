@@ -1,6 +1,14 @@
 .catalog-item {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+
   &::before {
     @include pseudo;
     top: -8px;
@@ -10,7 +18,6 @@
   }
 
   &--more {
-    padding: 70px 20px 14px;
     position: relative;
 
     &::after {
@@ -24,10 +31,9 @@
 }
 
 .catalog-item__container {
-  width: 320px;
-  box-sizing: border-box;
   padding: 11px 20px 14px;
-  margin: 0 auto;
+  min-width: 320px;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -36,12 +42,15 @@
   &--more {
     grid-template-columns: 1fr;
     position: relative;
+    padding: 70px 20px 14px;
+    min-width: 320px;
+    box-sizing: border-box;
 
     &::before {
       @include pseudo;
       width: 30px;
       height: 30px;
-      top: -53px;
+      top: 17px;
       left: 50%;
       transform: translateX(-50%);
       background-image: url("../img/show-more-catalog.svg");

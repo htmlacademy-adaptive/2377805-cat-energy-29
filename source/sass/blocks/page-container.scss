@@ -5,6 +5,14 @@
 .page-container__title-wrapper {
   margin: 27px auto 41px;
 
+  @media (min-width: $tablet-width) {
+    margin: 40px auto 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 188px auto 84px;
+  }
+
   &--form {
     margin: 27px auto 37px;
   }
@@ -17,6 +25,10 @@
   color: $basic-black;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-height (60px, 60px);
+  }
 }
 
 .page-container__description {

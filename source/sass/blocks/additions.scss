@@ -4,10 +4,7 @@
 }
 
 .additions__container {
-  width: 320px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 20px 35px;
+  padding-bottom: 35px;
 }
 
 .additions__list {
@@ -16,7 +13,6 @@
 }
 
 .additions__ads-wrapper {
-  width: 280px;
   height: 290px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-desktop.jpg");
   background-repeat: no-repeat;
