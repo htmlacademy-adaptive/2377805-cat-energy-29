@@ -1,23 +1,62 @@
 .additions__title {
   @include font-size-height (24px, 26px);
   margin: 25px 0 36px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 80px 0;
+  }
 }
 
 .additions__container {
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 87px;
+    gap: 81px;
+  }
+
 }
 
 .additions__list {
   @include style-list-none;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: unset;
+  }
+
 }
 
 .additions__ads-wrapper {
   height: 290px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-desktop.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 280px 290px;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-tablet.jpg");
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 288px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-desktop.jpg");
+    width: 245px;
+  }
+
 }
 
 .additions__ads {
@@ -30,6 +69,21 @@
   padding: 187px 0 43px 0;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 135px;
+    padding: 71px 0 69px 0;
+    text-align: left;
+    transform: translateX(50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 185px 0 43px 0;
+    transform: translateX(0);
+    text-align: center;
+  }
+
+
   &::before {
     @include pseudo;
     background-image: url("../img/icon_gift.svg");
@@ -38,5 +92,19 @@
     left: 50%;
     transform: translateX(-50%);
     top: 59px;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+      left: -344px;
+      transform: translateX(0);
+      width: 80px;
+      height: 83px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 56px;
+    }
   }
 }
