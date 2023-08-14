@@ -22,13 +22,13 @@
           </button>
           <ul class="header-nav__list header-nav__list--nojs header-nav__list--closed">
             <li class="header-nav__item">
-              <a class="header-nav__link" href="index.html">Главная</a>
+              <a class="header-nav__link header-nav__link--grey" href="index.html">Главная</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="catalog.html">Каталог продукции</a>
+              <a class="header-nav__link header-nav__link--grey" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="header-nav__item header-nav__item--current">
-              <a class="header-nav__link" href="#">Подбор программы</a>
+            <li class="header-nav__item header-nav__item--current header-nav__item--current-green">
+              <a class="header-nav__link header-nav__link--grey" href="#">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -40,63 +40,65 @@
         <p class="page-container__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
       <form class="page-container__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form__fieldset form__fieldset--cat" role="group" aria-labelledby="pseudolegend">
-          <div class="form__fieldset-title-wrapper subtitle visually-hidden">
-            <div class="subtitle-wrapper">
-              <h2 class="subtitle__text" id="pseudolegend">Информация о коте.</h2>
+        <div class="form__container">
+          <div class="form__fieldset--cat" role="group" aria-labelledby="pseudolegend">
+            <div class="visually-hidden">
+              <div class="subtitle__wrapper container">
+                <h2 class="subtitle__text subtitle__text--catalog" id="pseudolegend">Информация о коте.</h2>
+              </div>
+            </div>
+            <div class="form__fieldset-input-wrapper form__fieldset-input-wrapper--cat container">
+              <label class="form__label">Имя:*
+                <input class="form__input input input--text" type="text" name="cats-name" placeholder="БАРСИК" required>
+              </label>
+              <label class="form__label">Вес (кг):*
+                <input class="form__input input input--number" type="number" name="cats-weight" placeholder="7" required>
+              </label>
+              <label class="form__label">Возраст (лет):
+                <input class="form__input input input--number" type="number" name="cats-age" placeholder="7">
+              </label>
             </div>
           </div>
-          <div class="form__fieldset-input-wrapper">
-            <label class="form__label">Имя:*
-              <input class="form__input input input--text" type="text" name="cats-name" placeholder="БАРСИК" required>
-            </label>
-            <label class="form__label">Вес (кг):*
-              <input class="form__input input input--number" type="number" name="cats-weight" placeholder="7" required>
-            </label>
-            <label class="form__label">Возраст (лет):
-              <input class="form__input input input--number" type="number" name="cats-age" placeholder="7">
-            </label>
-          </div>
-        </div>
-        <div class="form__fieldset--radio form-radio" role="group" aria-labelledby="pseudolegend">
-          <div class="form-radio__title-wrapper subtitle visually-hidden">
-            <div class="subtitle-wrapper">
-              <h2 class="subtitle__text" id="pseudolegend">Выбор типа программы.</h2>
+          <div class="form__fieldset--radio form-radio" role="group" aria-labelledby="pseudolegend">
+            <div class="visually-hidden">
+              <div class="subtitle__wrapper">
+                <h2 class="subtitle__text" id="pseudolegend">Выбор типа программы.</h2>
+              </div>
+            </div>
+            <div class="form-radio__list-container container">
+              <ul class="form-radio__list">
+                <li class="form-radio__item">
+                  <label class="form-radio__label">
+                    <input class="form-radio__input visually-hidden" type="radio" name="programs-type" value="slim" checked>
+                    <span class="form-radio__mark-radio"></span>
+                    <span class="form-radio__description">Похудение</span>
+                  </label>
+                </li>
+                <li class="form-radio__item">
+                  <label class="form-radio__label">
+                    <input class="form-radio__input visually-hidden" type="radio" name="programs-type" value="pro">
+                    <span class="form-radio__mark-radio"></span>
+                    <span class="form-radio__description">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form-radio__item">
+                  <label class="form-radio__label">
+                    <input class="form-radio__input visually-hidden" type="radio" name="programs-type" value="help">
+                    <span class="form-radio__mark-radio"></span>
+                    <span class="form-radio__description">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
             </div>
           </div>
-          <ul class="form-radio__list">
-            <div class="form-radio__list-container">
-              <li class="form-radio__item">
-                <label class="form-radio__label">
-                  <input class="form-radio__input visually-hidden" type="radio" name="programs-type" value="slim" checked>
-                  <span class="form-radio__mark-radio"></span>
-                  <span class="form-radio__description">Похудение</span>
-                </label>
-              </li>
-              <li class="form-radio__item">
-                <label class="form-radio__label">
-                  <input class="form-radio__input visually-hidden" type="radio" name="programs-type" value="pro">
-                  <span class="form-radio__mark-radio"></span>
-                  <span class="form-radio__description">Набор массы</span>
-                </label>
-              </li>
-              <li class="form-radio__item">
-                <label class="form-radio__label">
-                  <input class="form-radio__input visually-hidden" type="radio" name="programs-type" value="help">
-                  <span class="form-radio__mark-radio"></span>
-                  <span class="form-radio__description">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </div>
-          </ul>
         </div>
         <div class="form__fieldset--owner" role="group" aria-labelledby="pseudolegend">
-          <div class="form__fieldset-title-wrapper--owner subtitle">
-            <div class="subtitle-wrapper">
-              <h2 class="subtitle__text" id="pseudolegend">Контактные данные (владелец кота)</h2>
+          <div class="form__fieldset-title-wrapper form__fieldset-title-wrapper--owner subtitle">
+            <div class="subtitle__wrapper container">
+              <h2 class="subtitle__text subtitle__text--catalog" id="pseudolegend">Контактные данные (владелец кота)</h2>
             </div>
           </div>
-          <div class="form__fieldset-input-wrapper form__fieldset-input-wrapper--desktop">
+          <div class="form__fieldset-input-wrapper container">
             <label class="form__label">E-mail:*
               <input class="form__input input input--email" type="email" name="owners-email" placeholder="kuklachev@gmail.com" required>
             </label>
@@ -106,24 +108,24 @@
           </div>
         </div>
         <div class="form__fieldset--comments" role="group" aria-labelledby="pseudolegend">
-          <div class="form__fieldset-title-wrapper--comments subtitle">
-            <div class="subtitle-wrapper">
-              <h2 class="subtitle__text" id="pseudolegend">Комментарий</h2>
+          <div class="form__fieldset-title-wrapper form__fieldset-title-wrapper--comments subtitle">
+            <div class="subtitle__wrapper container">
+              <h2 class="subtitle__text subtitle__text--catalog" id="pseudolegend">Комментарий</h2>
             </div>
           </div>
-          <div class="form__fieldset-input-wrapper form__fieldset-input-wrapper--desktop">
+          <div class="form__fieldset-input-wrapper container">
             <label class="form__fieldset-title visually-hidden" for="textarea_comment"></label>
             <textarea class="form__textarea" id="textarea_comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </div>
         <div class="form__fieldset--additions form-checkbox" role="group" aria-labelledby="pseudolegend">
           <div class="form-checkbox__title-wrapper subtitle">
-            <div class="subtitle-wrapper">
-              <h2 class="subtitle__text" id="pseudolegend">Дополнительно</h2>
+            <div class="subtitle__wrapper container">
+              <h2 class="subtitle__text subtitle__text--catalog" id="pseudolegend">Дополнительно</h2>
             </div>
           </div>
-          <ul class="form-checkbox__list">
-            <div class="form-checkbox__list-container">
+          <div class="form-checkbox__list-container container">
+            <ul class="form-checkbox__list">
               <li class="form-checkbox__item">
                 <label class="form-checkbox__label">
                   <input class="form-checkbox__input visually-hidden" type="checkbox" name="sweetener" checked>
@@ -152,10 +154,10 @@
                   <span class="form-checkbox__description">Витамины</span>
                 </label>
               </li>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </div>
-        <div class="form__button-container">
+        <div class="form__button-container container">
           <button class="form__button button" type="submit">Отправить заявку</button>
           <p class="form__tooltip">* — Обязательные поля</p>
         </div>
@@ -163,9 +165,9 @@
     </main>
     <footer class="main-footer">
       <section class="main-footer__contacts contacts contacts--grey">
-        <div class="contacts__wrapper">
+        <div class="contacts__container container">
           <h2 class="visually-hidden">Контакты.</h2>
-          <div class="contacts__container contacts__container--grey">
+          <div class="contacts__wrapper contacts__wrapper--grey">
             <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
             <address class="contacts__address">
               <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
@@ -175,16 +177,14 @@
         </div>
         <div class="contacts__map-wrapper">
           <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7692.423439456909!2d30.317824948655435!3d59.93868527496384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sil!4v1691098209357!5m2!1sru!2sil" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <!--Или iframe или картинка-->
-          <img class="contacts__map" src="#" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
         </div>
       </section>
       <section class="main-footer__links footer-links">
-        <div class="footer-links__wrapper">
+        <div class="footer-links__container container">
           <h2 class="visually-hidden">Мы в социальных сетях.</h2>
-          <a class="footer-links__home" href="index.html">
-            <img class="footer-links__logo" src="#" width="128" height="24" alt="Текстовый логотип бренда Cat Energy.">
-          </a>
+          <span class="footer-links__home">
+            <img class="footer-links__logo" src="#" width="128" height="24" alt="Logo.">
+          </span>
           <ul class="footer-links__socials social-networks">
             <li class="social-networks__item">
               <a class="social-networks__link" href="https://vk.com/htmlacademy">
@@ -231,5 +231,6 @@
         </div>
       </section>
     </footer>
+    <script src="scritps/script.js"></script>
   </body>
 </html>

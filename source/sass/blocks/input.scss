@@ -6,6 +6,11 @@
   padding: 14px 15px 13px;
   border: 1px solid #e7e7e7;
 
+  @media (min-width: $tablet-width) {
+    @include font-size-height (20px, 30px);
+    padding: 11px 20px;
+  }
+
   &::placeholder {
     color: $dark-grey;
   }

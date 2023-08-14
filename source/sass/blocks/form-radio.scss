@@ -1,25 +1,36 @@
-.form-radio__title-wrapper {
-  margin-bottom: 26px;
+.form-radio__list-container {
+  padding: 22px 20px 18px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px 27px;
+    margin: 0 70px;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 28px;
+    margin: 0;
+    max-width: unset;
+    width: 570px;
+  }
 }
 
 .form-radio__list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
   font-family: $osvald-font;
-
 
   @include font-size-height (16px, 18px);
   @include style-list-none;
   text-transform: uppercase;
-  border: 1px solid #d9d9d9;
-}
 
-.form-radio__list-container {
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-  padding: 22px 20px 18px;
-  width: 322px;
-  box-sizing: border-box;
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    @include font-size-height (20px, 30px);
+  }
 }
 
 .form-radio__label {
@@ -38,6 +49,11 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      @media (min-width: $tablet-width) {
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 }
@@ -47,8 +63,18 @@
   height: 30px;
   background-image: url("../img/radiobutton.svg");
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/radiobutton-tablet.svg");
+  }
 }
 
 .form-radio__description {
   padding-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }

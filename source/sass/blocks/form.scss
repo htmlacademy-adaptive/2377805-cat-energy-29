@@ -1,39 +1,120 @@
+.form__container {
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+  }
+}
+
 .form__fieldset {
   &--cat {
     margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--radio {
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 
   &--owner {
     margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 70px;
+    }
   }
 
   &--comments {
     margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 70px;
+    }
   }
 
   &--additions {
     margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 61px;
+    }
   }
 }
 
 .form__fieldset-input-wrapper {
-  width: 320px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+
+  &--cat {
+    @media (min-width: $desktop-width) {
+      max-width: unset;
+      margin: 0;
+      width: 570px;
+      padding: 0;
+    }
+  }
 }
 
 .form__label {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 13px;
   font-family: $osvald-font;
 
   @include font-size-height (16px, 18px);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-height (20px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .form__input {
@@ -43,10 +124,22 @@
 .form__fieldset-title-wrapper {
   &--owner {
     margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 76px;
+    }
   }
 
   &--comments {
     margin-bottom: 38px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 87px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 78px;
+    }
   }
 }
 
@@ -59,6 +152,18 @@
   height: 150px;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+
+    @include font-size-height (20px, 30px);
+    height: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 20px;
+
+  }
+
   &::placeholder {
     text-transform: uppercase;
     color: $dark-grey;
@@ -66,14 +171,25 @@
 }
 
 .form__button-container {
-  width: 320px;
-  margin: 0 auto 32px;
-  box-sizing: border-box;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   gap: 21px;
-  padding: 0 20px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    flex-direction: row;
+    gap: 64px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .form__button {
@@ -82,6 +198,17 @@
   padding: 14px 44px;
 
   @include font-size-height (16px, 20px);
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+    padding: 14px 45px;
+
+    @include font-size-height (20px, 26px);
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .form__tooltip {
@@ -89,4 +216,12 @@
 
   @include font-size-height (14px, 16px);
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-height (16px, 16px);
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }

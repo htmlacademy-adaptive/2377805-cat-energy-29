@@ -15,9 +15,13 @@
   }
 }
 
-.subtitle-wrapper {
+.subtitle__wrapper {
   display: flex;
   justify-content: flex-start;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+  }
 }
 
 .subtitle__text {

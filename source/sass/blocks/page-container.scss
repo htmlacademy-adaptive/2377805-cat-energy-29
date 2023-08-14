@@ -15,6 +15,16 @@
 
   &--form {
     margin: 27px auto 37px;
+
+    @media (min-width: $tablet-width) {
+      margin: 41px auto 66px;
+      padding: 0 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 188px auto 66px;
+      padding: 0 110px;
+    }
   }
 }
 
@@ -36,5 +46,16 @@
   text-transform: uppercase;
   font-family: $osvald-font;
   color: $basic-black;
-  padding-right: 54px;
+  width: 226px;
+
+  @media (min-width: $tablet-width) {
+    margin: 54px 0 66px 0;
+    width: 323px;
+
+    @include font-size-height (20px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 55px 0 66px 0;
+  }
 }
