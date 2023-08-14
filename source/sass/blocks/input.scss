@@ -25,5 +25,25 @@
     background-image: url("../img/email-icon.svg");
     background-repeat: no-repeat;
     background-position: right 12px top 13px;
+
+    @media (min-width: $tablet-width) {
+      background-position: right 14px top 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 494px;
+      box-sizing: border-box;
+    }
+  }
+
+  &--tel {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: right 12px top 13px;
+
+    @media (min-width: $desktop-width) {
+      width: 472px;
+      box-sizing: border-box;
+    }
   }
 }

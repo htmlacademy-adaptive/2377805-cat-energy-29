@@ -97,6 +97,13 @@
       padding: 0;
     }
   }
+
+  &--owner {
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 }
 
 .form__label {
@@ -110,10 +117,6 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-height (20px, 30px);
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -161,7 +164,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 9px 20px;
-
   }
 
   &::placeholder {
@@ -181,13 +183,11 @@
     margin-bottom: 60px;
     flex-direction: row;
     gap: 64px;
-  }
-
-  @media (min-width: $tablet-width) {
     padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
+    gap: 80px;
     padding: 0 110px;
   }
 }
@@ -207,7 +207,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    width: 570px;
   }
 }
 
@@ -219,9 +219,5 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-height (16px, 16px);
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }

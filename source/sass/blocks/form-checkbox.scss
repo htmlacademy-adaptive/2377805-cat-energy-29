@@ -38,12 +38,9 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    grid-template-columns: 325px 325px 325px auto;
   }
-
 }
-
-
 
 .form-checkbox__label {
   display: flex;
