@@ -81,12 +81,8 @@
     gap: 20px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     padding: 0 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
   }
 
   &--cat {
@@ -183,12 +179,14 @@
     margin-bottom: 60px;
     flex-direction: row;
     gap: 64px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 80px;
-    padding: 0 110px;
   }
 }
 

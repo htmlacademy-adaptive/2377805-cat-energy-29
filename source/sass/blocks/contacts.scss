@@ -21,6 +21,10 @@
     height: 400px;
     padding: 0 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: unset;
+  }
 }
 
 .contacts__wrapper {

@@ -1,7 +1,7 @@
 .hero {
   color: $basic-white;
   font-family: $osvald-font;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+  background-image: linear-gradient(rgb(99, 166, 59,), rgb(99, 166, 59,));
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 305px;
@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+    background-image: linear-gradient(rgb(99, 166, 59,), rgb(99, 166, 59,));
     background-repeat: no-repeat;
     background-position: top left 50vw;
     background-size: 100% 694px;

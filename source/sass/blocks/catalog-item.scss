@@ -199,7 +199,11 @@
   &--more {
     color: $third-black;
     text-align: center;
-    min-width: 280px;
+    width: 208px;
+
+    @media (min-width: $tablet-width) {
+      width: 134px;
+    }
   }
 }
 

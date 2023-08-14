@@ -18,12 +18,14 @@
 
     @media (min-width: $tablet-width) {
       margin: 41px auto 66px;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
       padding: 0 70px;
     }
 
     @media (min-width: $desktop-width) {
       margin: 188px auto 66px;
-      padding: 0 110px;
     }
   }
 }
