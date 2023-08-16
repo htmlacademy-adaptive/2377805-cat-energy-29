@@ -67,13 +67,13 @@
     transform: translateX(-50%) translateY(35%);
   }
 
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
+
   &--days {
     @media (min-width: $tablet-width) {
       width: 126px;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: #eaeaea;
   }
 }

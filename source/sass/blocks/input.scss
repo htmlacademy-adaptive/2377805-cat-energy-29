@@ -25,6 +25,7 @@
     background-image: url("../img/email-icon.svg");
     background-repeat: no-repeat;
     background-position: right 12px top 13px;
+    padding-right: 48px;
 
     @media (min-width: $tablet-width) {
       background-position: right 14px top 16px;
@@ -40,6 +41,7 @@
     background-image: url("");
     background-repeat: no-repeat;
     background-position: right 12px top 13px;
+    padding-right: 48px;
 
     @media (min-width: $desktop-width) {
       width: 472px;
