@@ -6,6 +6,17 @@
   padding: 14px 15px 13px;
   border: 1px solid #e7e7e7;
 
+  @include transition (border);
+
+  &:focus {
+    outline: none;
+    border: 1px solid $dark-grey;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
+
   @media (min-width: $tablet-width) {
     @include font-size-height (20px, 30px);
     padding: 11px 20px;

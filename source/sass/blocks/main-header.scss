@@ -66,6 +66,16 @@
 
 .main-header__link {
   position: relative;
+
+  @include transition (opacity);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__logo-image {
