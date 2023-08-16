@@ -1,51 +1,122 @@
 .hero {
   color: $basic-white;
   font-family: $osvald-font;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+  background-image: linear-gradient(rgb(99, 166, 59,), rgb(99, 166, 59,));
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 305px;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    background: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(rgb(99, 166, 59,), rgb(99, 166, 59,));
+    background-repeat: no-repeat;
+    background-position: top left 50vw;
+    background-size: 100% 694px;
+  }
 }
 
 .hero__wrapper {
-  width: 320px;
-  box-sizing: border-box;
-  padding: 0 20px 0 20px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 320px 305px;
+
+  @media (min-width: $tablet-width) {
+    background: unset;
+    display: block;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 143px;
+    padding-bottom: 52px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 720px 694px;
+  }
 }
 
 .hero__title {
   margin: 27px 15px 25px 15px;
-  width: 250px;
   font-weight: 400;
   text-align: center;
 
   @include font-size-height (36px, 36px);
+
+  @media (min-width: $tablet-width) {
+    margin: 40px 0 40px 90px;
+    text-align: unset;
+
+
+    @include font-size-height (60px, 60px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 420px;
+    margin: 119px 0 40px 80px;
+  }
 }
 
 .hero__slogan {
-  margin: 0;
-  margin-bottom: 29px;
+  margin: 0 0 29px 0;
   text-transform: uppercase;
 
   @include font-size-height (14px, 14px);
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 50px 90px;
+
+    @include font-size-height (20px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px 80px;
+  }
 }
 
 .hero__image {
   margin-bottom: 3px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    margin-bottom: 0;
+    top: 241px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 0;
+    top: 143px;
+    left: 557px;
+  }
 }
 
 .hero__button {
-  width: 280px;
+  width: 100%;
   box-sizing: border-box;
   text-align: center;
-  padding: 8px 44px 8px 44px;
+  padding: 8px 44px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 14px 26px;
+    margin: 0 0 526px 90px;
+
+    @include font-size-height (20px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 184px 80px;
+  }
 }
+

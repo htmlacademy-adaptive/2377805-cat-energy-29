@@ -1,19 +1,39 @@
 .programs {
-  width: 320px;
-  box-sizing: border-box;
-  margin: 0 auto;
   color: $dark-grey;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: $lato-font;
-  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .programs__list {
   @include style-list-none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .programs__item:not(:last-child) {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }

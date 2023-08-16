@@ -8,24 +8,47 @@
     border: 1px solid $basic-green;
     width: 100%;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
   }
 }
 
-.subtitle-wrapper {
-  width: 320px;
-  box-sizing: border-box;
-  margin: 0 auto;
+.subtitle__wrapper {
   display: flex;
+  justify-content: flex-start;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+  }
 }
 
 .subtitle__text {
   font-family: $osvald-font;
   color: $basic-black;
   font-weight: 400;
-  margin: 0;
   background-color: $basic-white;
   padding: 0 20px;
+  margin: 0 0 0 -20px;
   max-width: 182px;
 
   @include font-size-height (24px, 26px);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    margin: 0;
+    max-width: unset;
+    display: flex;
+
+    @include font-size-height (36px, 36px);
+  }
+
+  &--catalog {
+    max-width: 226px;
+
+    @media (min-width: $tablet-width) {
+      max-width: unset;
+    }
+  }
 }

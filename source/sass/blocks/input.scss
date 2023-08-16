@@ -6,17 +6,44 @@
   padding: 14px 15px 13px;
   border: 1px solid #e7e7e7;
 
+  @media (min-width: $tablet-width) {
+    @include font-size-height (20px, 30px);
+    padding: 11px 20px;
+  }
+
   &::placeholder {
     color: $dark-grey;
   }
 
-  &--number {
-    appearance: textfield;
+  &--number::-webkit-outer-spin-button,
+  &--number::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
   }
 
   &--email {
     background-image: url("../img/email-icon.svg");
     background-repeat: no-repeat;
     background-position: right 12px top 13px;
+
+    @media (min-width: $tablet-width) {
+      background-position: right 14px top 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 494px;
+      box-sizing: border-box;
+    }
+  }
+
+  &--tel {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: right 12px top 13px;
+
+    @media (min-width: $desktop-width) {
+      width: 472px;
+      box-sizing: border-box;
+    }
   }
 }

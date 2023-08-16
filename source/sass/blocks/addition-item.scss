@@ -1,16 +1,44 @@
 .addition-item {
   display: grid;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
   padding: 13px 0 19px 0;
   border-top: 1px solid #cdcdcd;
 
-  &--last {
+  @media (min-width: $tablet-width) {
+    grid-template-rows: repeat(2, auto);
+    padding: 26px 40px 28px 40px;
+    border-right: 1px solid #b1a2a2;
+    border-left: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: unset;
+    grid-template-columns: 1fr 244px;
+    padding: 14px 0 17px 0;
+    border-right: none;
+    border-left: none;
+  }
+
+
+  &:last-child {
     border-bottom: 1px solid #cdcdcd;
   }
 }
 
+.addition-item__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    align-content: center;
+  }
+}
+
 .addition-item__title {
-  grid-row: span 1;
   margin: 0 0 13px 0;
   font-family: $osvald-font;
   font-weight: 400;
@@ -18,19 +46,44 @@
   color: $secondary-black;
 
   @include font-size-height (16px, 16px);
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    @include font-size-height (20px, 20px);
+  }
 }
 
 .addition-item__property-wrapper {
-  grid-row: span 1;
   display: flex;
   justify-content: space-between;
 
   @include font-size-height (14px, 14px);
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 235px 91px;
+    justify-items: right;
+
+    @include font-size-height (16px, 20px);
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 243px 82px;
+    justify-items: left;
+  }
 }
 
 .addition-item__button {
-  grid-row: span 1;
   text-align: center;
   padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 0;
+
+    @include font-size-height (16px, 24px);
+  }
 }
+

@@ -1,25 +1,132 @@
-.header-nav {
-  width: 24px;
-  height: 24px;
-}
-
 .header-nav__list {
   @include style-list-none;
+  text-transform: uppercase;
+
+  position: absolute;
+  bottom: -199px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    transform: translateX(0);
+    width: unset;
+    display: flex;
+    justify-content: flex-end;
+    gap: 33px;
+  }
+}
+
+.header-nav__list--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.header-nav__list--nojs {
+  display: block;
+  position: static;
+  transform: translateX(0);
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.header-nav__list--opened {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .header-nav__item {
   font-family: $osvald-font;
-  color: $basic-black;
-  height: 64px;
+  border-top: 1px solid #e6e6e6;
+  height: 65px;
+  min-width: 320px;
 
   @include font-size-height (20px, 20px);
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    height: unset;
+    min-width: unset;
+
+    @include font-size-height (18px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-size-height (20px, 30px);
+  }
+
+  &:last-child {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+      border-bottom: none;
+    }
+  }
+
+  &--current {
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+
+    &::before {
+      @media (min-width: $tablet-width) {
+        @include pseudo;
+        left: 5px;
+        bottom: -9px;
+        border: 1px solid $basic-green;
+        width: calc(100% - 10px);
+      }
+
+      @media (min-width: $desktop-width) {
+        border: 1px solid $basic-white;
+      }
+    }
+  }
+
+  &--current-green {
+    &::before {
+      @media (min-width: $desktop-width) {
+        border-color: $basic-green;
+      }
+    }
+  }
 }
 
 .header-nav__link {
+  background-color: $basic-white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   text-decoration: none;
   color: $basic-black;
+  height: 100%;
+  padding: 0 5px;
+
+  @media (min-width: $tablet-width) {
+    min-width: unset;
+    height: unset;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
+
+  &--grey {
+    @media (min-width: $desktop-width) {
+      color: $third-black;
+    }
+  }
 }

@@ -6,4 +6,23 @@
   padding-top: 8px;
   padding-bottom: 11px;
   gap: 19px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(324px, auto));
+    padding: 0 30px 70px;
+    row-gap: 60px;
+    column-gap: 60px;
+    justify-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(auto-fill, minmax(245px, auto));
+    padding: 0 110px 76px;
+    row-gap: 63px;
+    column-gap: 80px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
 }

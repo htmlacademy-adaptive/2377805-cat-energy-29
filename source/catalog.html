@@ -2,41 +2,40 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__link" href="#">
-          <img class="main-header__logo-image" src="../img/logo-mobile.svg" width="33" height="38" alt="Логотип бренда Cat Energy.">
-        </a>
-        <a class="main-header__link" href="#">
-          <img class="main-header__logo-name" src="../img/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип бренда Cat Energy.">
-        </a>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <span class="main-header__toggle-line"></span>
-          <span class="main-header__toggle-line"></span>
-          <span class="main-header__toggle-line"></span>
-        </button>
-        <nav class="header-nav visually-hidden">
-          <ul class="header-nav__list">
+      <div class="main-header__container main-header__container--nojs container">
+        <div class="main-header__wrapper">
+          <a class="main-header__link" href="#">
+            <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип бренда Cat Energy.">
+            <img class="main-header__logo-name" src="img/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип бренда Cat Energy.">
+          </a>
+        </div>
+        <nav class="main-header__nav header-nav">
+          <button class="main-header__toggle main-header__toggle--nojs" type="button">
+            <span class="main-header__toggle-line"></span>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="header-nav__list header-nav__list--nojs header-nav__list--closed">
             <li class="header-nav__item">
-              <a class="header-nav__link" href="index.html">Главная</a>
+              <a class="header-nav__link header-nav__link--grey" href="index.html">Главная</a>
             </li>
-            <li class="header-nav__item header-nav__item--current">
-              <a class="header-nav__link" href="#">Каталог продукции</a>
+            <li class="header-nav__item header-nav__item--current header-nav__item--current-green">
+              <a class="header-nav__link header-nav__link--grey" href="#">Каталог продукции</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="form.html">Подбор программы</a>
+              <a class="header-nav__link header-nav__link--grey" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="page-container">
-      <div class="page-container__title-wrapper">
+      <div class="page-container__title-wrapper container">
         <h1 class="page-container__title">Каталог продукции</h1>
       </div>
       <section class="catalog">
@@ -48,7 +47,7 @@
                 <img class="catalog-item__image" src="img/catalog-item-1-mobile.jpg" width="68" height="86" alt="Питание Cat Energy Pro 500 грамм со вкусом курицы">
               </a>
               <div class="catalog-item__wrapper">
-                <a class="catalog-item__link catalog-item__link--title" href="#">
+                <a class="catalog-item__title-link" href="#">
                   <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
                 </a>
                 <ul class="catalog-item__properties">
@@ -75,7 +74,7 @@
                 <img class="catalog-item__image catalog-item__image--big" src="#" width="84" height="100" alt="Питание Cat Energy Pro 1000 грамм со вкусом курицы">
               </a>
               <div class="catalog-item__wrapper">
-                <a class="catalog-item__link catalog-item__link--title" href="#">
+                <a class="catalog-item__title-link" href="#">
                   <h3 class="catalog-item__title">Cat Energy PRO 1000 г</h3>
                 </a>
                 <ul class="catalog-item__properties">
@@ -102,7 +101,7 @@
                 <img class="catalog-item__image" src="#" width="68" height="86" alt="Питание Cat Energy Pro 500 грамм со вкусом рыбы">
               </a>
               <div class="catalog-item__wrapper">
-                <a class="catalog-item__link catalog-item__link--title" href="#">
+                <a class="catalog-item__title-link" href="#">
                   <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
                 </a>
                 <ul class="catalog-item__properties">
@@ -129,7 +128,7 @@
                 <img class="catalog-item__image catalog-item__image--big" src="#" width="84" height="100" alt="Питание Cat Energy Pro 1000 грамм со вкусом рыбы">
               </a>
               <div class="catalog-item__wrapper">
-                <a class="catalog-item__link catalog-item__link--title" href="#">
+                <a class="catalog-item__title-link" href="#">
                   <h3 class="catalog-item__title">Cat Energy PRO 1000 г</h3>
                 </a>
                 <ul class="catalog-item__properties">
@@ -156,7 +155,7 @@
                 <img class="catalog-item__image" src="#" width="68" height="86" alt="Питание Cat Energy Slim 500 грамм со вкусом гречки">
               </a>
               <div class="catalog-item__wrapper">
-                <a class="catalog-item__link catalog-item__link--title" href="#">
+                <a class="catalog-item__title-link" href="#">
                   <h3 class="catalog-item__title">Cat Energy Slim 500 г</h3>
                 </a>
                 <ul class="catalog-item__properties">
@@ -183,7 +182,7 @@
                 <img class="catalog-item__image catalog-item__image--big" src="#" width="84" height="100" alt="Питание Cat Energy Slim 1000 грамм со вкусом гречки">
               </a>
               <div class="catalog-item__wrapper">
-                <a class="catalog-item__link catalog-item__link--title" href="#">
+                <a class="catalog-item__title-link" href="#">
                   <h3 class="catalog-item__title">Cat Energy Slim 1000 г</h3>
                 </a>
                 <ul class="catalog-item__properties">
@@ -210,7 +209,7 @@
                 <img class="catalog-item__image" src="#" width="68" height="86" alt="Питание Cat Energy Slim 500 грамм со вкусом риса">
               </a>
               <div class="catalog-item__wrapper">
-                <a class="catalog-item__link catalog-item__link--title" href="#">
+                <a class="catalog-item__title-link" href="#">
                   <h3 class="catalog-item__title">Cat Energy Slim 500 г</h3>
                 </a>
                 <ul class="catalog-item__properties">
@@ -235,84 +234,90 @@
             <div class="catalog-item__container catalog-item__container--more">
               <div class="catalog-item__wrapper catalog-item__wrapper--more">
                 <h3 class="catalog-item__title catalog-item__title--more">Показать еще 100500 товаров</h3>
-                <p class="catalog-item__property">На самом деле вкусов гораздо больше!</p>
+                <p class="catalog-item__property catalog-item__property--more">На самом деле вкусов гораздо больше!</p>
               </div>
-              <a class="catalog-item__button button button--grey" href="#">Показать все</a>
+              <a class="catalog-item__button catalog-item__button--more button button--grey" href="#">Показать все</a>
             </div>
           </li>
         </ul>
       </section>
       <section class="additions">
         <div class="additions__title subtitle">
-          <div class="subtitle-wrapper">
-            <h2 class="subtitle__text" id="pseudolegend">Дополнительные товары</h2>
+          <div class="subtitle__wrapper container">
+            <h2 class="subtitle__text subtitle__text--catalog" id="pseudolegend">Дополнительные товары</h2>
           </div>
         </div>
-        <div class="additions__container">
+        <div class="additions__container container">
           <ul class="additions__list">
             <li class="additions__item addition-item">
-              <p class="addition-item__title">Сахарозаменитель</p>
-              <div class="addition-item__property-wrapper">
-                <span>1 упаковка (100 г)</span>
-                <span>200 ₽</span>
+              <div class="addition-item__wrapper">
+                <p class="addition-item__title">Сахарозаменитель</p>
+                <div class="addition-item__property-wrapper">
+                  <span>1 упаковка (100 г)</span>
+                  <span>200 ₽</span>
+                </div>
               </div>
               <a class="addition-item__button button" href="#">Заказать</a>
             </li>
             <li class="additions__item addition-item">
-              <p class="addition-item__title">питьевая вода</p>
-              <div class="addition-item__property-wrapper">
-                <span>5 литров</span>
-                <span>50 ₽</span>
+              <div class="addition-item__wrapper">
+                <p class="addition-item__title">питьевая вода</p>
+                <div class="addition-item__property-wrapper">
+                  <span>5 литров</span>
+                  <span>50 ₽</span>
+                </div>
               </div>
               <a class="addition-item__button button" href="#">Заказать</a>
             </li>
             <li class="additions__item addition-item">
-              <p class="addition-item__title">Молоко</p>
-              <div class="addition-item__property-wrapper">
-                <span>1 литр</span>
-                <span>100 ₽</span>
+              <div class="addition-item__wrapper">
+                <p class="addition-item__title">Молоко</p>
+                <div class="addition-item__property-wrapper">
+                  <span>1 литр</span>
+                  <span>100 ₽</span>
+                </div>
               </div>
               <a class="addition-item__button button" href="#">Заказать</a>
             </li>
-            <li class="additions__item addition-item addition-item--last">
-              <p class="addition-item__title">Витамины</p>
-              <div class="addition-item__property-wrapper">
-                <span>1 упаковка (30 г)</span>
-                <span>300 ₽</span>
+            <li class="additions__item">
+              <div class="addition-item__wrapper">
+                <p class="addition-item__title">Витамины</p>
+                <div class="addition-item__property-wrapper">
+                  <span>1 упаковка (30 г)</span>
+                  <span>300 ₽</span>
+                </div>
               </div>
               <a class="addition-item__button button" href="#">Заказать</a>
             </li>
           </ul>
           <div class="additions__ads-wrapper">
-            <p class="additions__ads">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="additions__ads">Закажите все<br>и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <section class="main-footer__contacts contacts contacts--grey">
-        <div class="contacts__wrapper">
+        <div class="contacts__container container">
           <h2 class="visually-hidden">Контакты.</h2>
-          <div class="contacts__container contacts__container--grey">
+          <div class="contacts__wrapper contacts__wrapper--grey">
             <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
             <address class="contacts__address">
               <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
               <span class="contacts__city">Санкт-Петербург</span>
             </address>
           </div>
-          <div class="contacts__map-wrapper">
-            <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7692.423439456909!2d30.317824948655435!3d59.93868527496384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sil!4v1691098209357!5m2!1sru!2sil" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <!--Или iframe или картинка-->
-            <img class="contacts__map" src="#" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
-          </div>
+        </div>
+        <div class="contacts__map-wrapper">
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7692.423439456909!2d30.317824948655435!3d59.93868527496384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sil!4v1691098209357!5m2!1sru!2sil" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
       <section class="main-footer__links footer-links">
-        <div class="footer-links__wrapper">
+        <div class="footer-links__container container">
           <h2 class="visually-hidden">Мы в социальных сетях.</h2>
-          <a class="footer-links__home" href="index.html">
-            <img class="footer-links__logo" src="#" width="128" height="24" alt="Текстовый логотип бренда Cat Energy.">
-          </a>
+          <span class="footer-links__home">
+            <img class="footer-links__logo" src="#" width="128" height="24" alt="Logo.">
+          </span>
           <ul class="footer-links__socials social-networks">
             <li class="social-networks__item">
               <a class="social-networks__link" href="https://vk.com/htmlacademy">
@@ -359,5 +364,6 @@
         </div>
       </section>
     </footer>
+    <script src="scritps/script.js"></script>
   </body>
 </html>

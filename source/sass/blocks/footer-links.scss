@@ -1,46 +1,74 @@
-.footer-links__wrapper {
-  width: 320px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 40px 20px;
+.footer-links__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: unset;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
 }
 
 .footer-links__home {
   position: relative;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    text-align: start;
+  }
 
   &::before {
     @include pseudo;
     bottom: -20px;
     left: 0;
     border-top: 1px solid #d9d9d9;
-    width: 280px;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .footer-links__socials {
   position: relative;
+  width: 100%;
 
   &::before {
     @include pseudo;
     bottom: -20px;
     left: 0;
     border-top: 1px solid #d9d9d9;
-    width: 280px;
-  }
-}
+    width: 100%;
 
-.footer-links__academy {
-  width: 280px;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .footer-links__academy-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 140px;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
 }
 
 .footer-links__academy-link {
