@@ -18,3 +18,19 @@
   align-items: center;
   padding: 0 4px;
 }
+
+.social-networks__icon {
+  color: #666666;
+
+  transition-property: color, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
