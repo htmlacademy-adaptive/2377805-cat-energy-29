@@ -1,4 +1,4 @@
-// Реализация меню в мобильной версии
+// Реализация меню в мобильной версии сайта
 
 let mainHeadContainer = document.querySelector('.main-header__container');
 let navMain = document.querySelector('.header-nav__list');
