@@ -92,6 +92,10 @@
 
   &:active {
     opacity: 0.3;
+
+    .footer-links__academy-logo {
+      color: $basic-green;
+    }
   }
 }
 
