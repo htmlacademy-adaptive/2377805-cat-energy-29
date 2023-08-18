@@ -17,13 +17,9 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    right: 50%;
-    height: 400px;
-    padding: 0 45px;
-  }
-
-  @media (min-width: $desktop-width) {
+    right: calc(50% + 45px);
     height: unset;
+    padding: 0;
   }
 }
 
@@ -40,6 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 61px 78px 60px 80px;
     grid-template-columns: 163px 157px;
     gap: 87px;
   }
@@ -78,6 +75,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: unset;
+    text-align: left;
   }
 }
 

@@ -5,7 +5,8 @@
     @include pseudo;
     left: 0;
     top: 16px;
-    border: 1px solid $basic-green;
+    border-top: 1px solid $basic-green;
+    border-bottom: 1px solid $basic-green;
     width: 100%;
     z-index: -1;
 

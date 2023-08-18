@@ -103,10 +103,15 @@
 }
 
 .form__label {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 13px;
   font-family: $osvald-font;
+
+  &:hover .input {
+    border: 1px solid #cdcdcd;
+  }
 
   @include font-size-height (16px, 18px);
   text-transform: uppercase;

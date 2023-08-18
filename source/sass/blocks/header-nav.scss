@@ -14,7 +14,7 @@
     width: unset;
     display: flex;
     justify-content: flex-end;
-    gap: 33px;
+    gap: 23px;
   }
 }
 
@@ -51,6 +51,15 @@
   min-width: 320px;
 
   @include font-size-height (20px, 20px);
+  @include transition (opacity);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     border-top: none;

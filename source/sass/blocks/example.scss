@@ -112,12 +112,6 @@
 
 .example__slider {
   margin: 0 auto;
-  height: 256px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 74px;
-    height: 512px;
-  }
 
   @media (min-width: $desktop-width) {
     margin: 0;

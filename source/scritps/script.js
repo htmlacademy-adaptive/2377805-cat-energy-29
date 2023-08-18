@@ -1,3 +1,5 @@
+// Реализация меню в мобильной версии
+
 let mainHeadContainer = document.querySelector('.main-header__container');
 let navMain = document.querySelector('.header-nav__list');
 let navToggle = document.querySelector('.main-header__toggle');
@@ -20,3 +22,4 @@ let navToggleLine = document.querySelector('.main-header__toggle-line');
 
 navToggle.addEventListener('click', function(){
   navToggleLine.classList.toggle('main-header__toggle-line--active')});
+

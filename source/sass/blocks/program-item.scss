@@ -132,6 +132,16 @@
   background-repeat: no-repeat;
   background-position: right center;
 
+  @include transition (opacity);
+
+  &:hover {
+    background-image: url("../img/icon_arrow_long.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     @include font-size-height (20px, 30px);
     padding: 4px 57px 4px 0;
