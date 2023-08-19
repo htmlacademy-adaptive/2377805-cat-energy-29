@@ -128,14 +128,28 @@
   @include font-size-height (16px, 16px);
   font-family: $osvald-font;
   padding: 4px 47px 4px 0;
-  background-image: url("../img/icon_arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
+  position: relative;
 
   @include transition (opacity);
 
+  &::before {
+    @include pseudo;
+    width: 24px;
+    height: 10px;
+    background-image: url("../img/icon-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    left: calc(100% - 32px);
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include transition (width);
+  }
+
   &:hover {
-    background-image: url("../img/icon_arrow_long.svg");
+    &::before {
+      width: 32px;
+    }
   }
 
   &:active {

@@ -55,6 +55,11 @@
 }
 
 .form-checkbox__input {
+  &:focus + .form-checkbox__mark {
+    border: 1px solid $basic-green;
+    box-shadow: 0 0 0 1px $basic-green;
+  }
+
   &:checked + {
     .form-checkbox__mark {
       background-image: url("../../img/tick-checkbox.svg");
