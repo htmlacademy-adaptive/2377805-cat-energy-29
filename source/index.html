@@ -112,14 +112,18 @@
             </div>
           </div>
           <div class="example__slider slider">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x" width="280" height="512">
-              <img class="slider__image slider__image--before" src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" width="140" height="256" alt="Фото кота до похудения.">
-            </picture>
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x" width="280" height="512">
-              <img class="slider__image slider__image--after" src="img/cat-after-mobile.png" srcset="img/cat-after-mobile@2x.png 2x"  width="140" height="256" alt="Фото кота после похудения.">
-            </picture>
+            <div class="slider__before">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-before-full-tablet.png 1x, img/cat-before-full-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__image slider__image--before" src="img/cat-before-full-mobile.png" srcset="img/cat-before-full-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до похудения.">
+              </picture>
+            </div>
+            <div class="slider__after">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-after-full-tablet.png 1x, img/cat-after-full-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__image slider__image--after" src="img/cat-after-full-mobile.png" srcset="img/cat-after-full-mobile@2x.png 2x"  width="280" height="256" alt="Фото кота после похудения.">
+              </picture>
+            </div>
             <button class="slider__button" type="button">
               <span class="visually-hidden">Ползунок сравнения двух изображений.</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">

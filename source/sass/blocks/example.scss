@@ -2,7 +2,7 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient($basic-white 0, $basic-white 619px, #eaeaea 619px, #eaeaea 1081px);
+    background-image: linear-gradient(to top, #eaeaea 0, #eaeaea 462px, $basic-white 462px, $basic-white 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -56,7 +56,7 @@
 
 .example__wrapper {
   @media (min-width: $tablet-width) {
-    margin: 0 0 99px 0;
+    margin: 0 0 104px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
