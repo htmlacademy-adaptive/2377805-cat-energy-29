@@ -2,6 +2,7 @@
   height: 256px;
   width: 280px;
   position: relative;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     height: 512px;
@@ -9,21 +10,35 @@
   }
 }
 
-.slider__image {
+.slider__before {
   position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 2;
+  width: 50%;
+  height: 100%;
+}
 
-  &--before {
-    top: 0;
-    left: 0;
-  }
+.slider__image {
+  object-fit: cover;
 
+  &--before,
   &--after {
-    top: 0;
-    right: 0;
+    background-image: linear-gradient(#eaeaea 0, #eaeaea 256px);
+
+    @media (min-width: $tablet-width) {
+      background-image: linear-gradient($basic-white 0, $basic-white 151px, #eaeaea 151px, #eaeaea 512px);
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: linear-gradient($basic-white 0, $basic-white 136px, #f2f2f2 136px, #f2f2f2 512px);
+    }
   }
 }
 
 .slider__button {
+  z-index: 3;
   border: none;
   width: 40px;
   height: 40px;
