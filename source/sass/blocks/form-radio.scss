@@ -54,21 +54,19 @@
     box-shadow: 0 0 0 1px $basic-green;
   }
 
-  &:checked + {
-    .form-radio__mark-radio::before {
-      @include pseudo;
-      width: 13px;
-      height: 13px;
-      background-color: $basic-green;
-      border-radius: 50%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+  &:checked + .form-radio__mark-radio::before {
+    @include pseudo;
+    width: 13px;
+    height: 13px;
+    background-color: $basic-green;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-      @media (min-width: $tablet-width) {
-        width: 18px;
-        height: 18px;
-      }
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
     }
   }
 }

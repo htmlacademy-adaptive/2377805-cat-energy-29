@@ -66,6 +66,18 @@
   display: flex;
   align-items: center;
 
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 75px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 249px;
     box-sizing: border-box;
@@ -156,18 +168,6 @@
 
   &--icon-result::before {
     background-image: url("../img/icon-result.svg"), linear-gradient($basic-green, $basic-green);
-  }
-}
-
-.advantages__item:not(:last-child) {
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 75px;
   }
 }
 

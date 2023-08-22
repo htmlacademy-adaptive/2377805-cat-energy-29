@@ -133,9 +133,11 @@
 }
 
 .catalog-item__link {
-  display: block;
+  display: flex;
+  width: 100%;
   text-decoration: none;
-  justify-self: center;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 200px;
@@ -202,9 +204,11 @@
   @include style-list-none;
   display: flex;
   flex-direction: column;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     gap: 12px;
+    margin-bottom: 0;
   }
 }
 

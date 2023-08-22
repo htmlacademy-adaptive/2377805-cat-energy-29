@@ -60,16 +60,14 @@
     box-shadow: 0 0 0 1px $basic-green;
   }
 
-  &:checked + {
-    .form-checkbox__mark {
-      background-image: url("../../img/tick-checkbox.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 26px 26px;
+  &:checked + .form-checkbox__mark {
+    background-image: url("../../img/tick-checkbox.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
 
-      @media (min-width: $tablet-width) {
-        background-image: url("../../img/tick-checkbox-tablet.svg");
-      }
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/tick-checkbox-tablet.svg");
     }
   }
 }

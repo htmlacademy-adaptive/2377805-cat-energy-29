@@ -13,7 +13,7 @@
     border: 1px solid $dark-grey;
     box-shadow: 0 0 0 1px $dark-grey;
 
-    + .input__logo {
+    & + .input__logo {
       color: $basic-green;
     }
   }
@@ -21,7 +21,7 @@
   &:invalid {
     border: 1px solid #ff8282;
 
-    + .input__logo {
+    & + .input__logo {
       color: #ff8282;
     }
   }
