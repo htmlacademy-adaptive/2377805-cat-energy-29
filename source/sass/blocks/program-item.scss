@@ -15,7 +15,7 @@
     @include pseudo;
     width: 50px;
     height: 53px;
-    background-image: url("../img/slim-logo.svg");
+    background-image: url("../img/sprite.svg#slim-logo");
     background-repeat: no-repeat;
     background-size: 50px 53px;
     background-position: center;
@@ -25,7 +25,7 @@
     @media (min-width: $tablet-width) {
       width: 200px;
       height: 211px;
-      background-image: url("../img/slim-logo.svg");
+      background-image: url("../img/sprite.svg#slim-logo");
       background-size: 200px 211px;
       top: 81px;
       left: unset;
@@ -35,7 +35,7 @@
     @media (min-width: $desktop-width) {
       width: 100px;
       height: 106px;
-      background-image: url("../img/slim-logo.svg");
+      background-image: url("../img/sprite.svg#slim-logo");
       background-size: 100px 106px;
       top: 41px;
       right: unset;
@@ -47,7 +47,7 @@
     @include pseudo;
     width: 67px;
     height: 50px;
-    background-image: url("../img/pro-logo.svg");
+    background-image: url("../img/sprite.svg#pro-logo");
     background-repeat: no-repeat;
     background-size: 67px 50px;
     background-position: center;
@@ -57,7 +57,7 @@
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 200px;
-      background-image: url("../img/pro-logo.svg");
+      background-image: url("../img/sprite.svg#pro-logo");
       background-size: 268px 200px;
       top: 91px;
       left: unset;
@@ -67,7 +67,7 @@
     @media (min-width: $desktop-width) {
       width: 134px;
       height: 100px;
-      background-image: url("../img/pro-logo.svg");
+      background-image: url("../img/sprite.svg#pro-logo");
       background-size: 134px 100px;
       top: 47px;
       left: 33px;

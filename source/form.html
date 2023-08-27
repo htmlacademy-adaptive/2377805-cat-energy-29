@@ -111,14 +111,14 @@
           <div class="form__fieldset-input-wrapper form__fieldset-input-wrapper--owner container">
             <label class="form__label">E-mail:*
               <input class="form__input input input--email" type="email" name="owners-email" placeholder="kuklachev@gmail.com" reqiured>
-              <svg class="input__logo" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg class="input__logo" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none">
+                <use xlink:href="img/sprite.svg#email-icon"></use>
               </svg>
             </label>
             <label class="form__label">Телефон:*
               <input class="form__input input input--tel" type="tel" name="owners-tel" placeholder="8 (960) 900-60-90" reqiured>
-              <svg class="input__logo" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg class="input__logo" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                <use xlink:href="img/sprite.svg#telephone-icon"></use>
               </svg>
             </label>
           </div>
@@ -180,10 +180,10 @@
       </form>
     </main>
     <footer class="main-footer">
-      <section class="main-footer__contacts contacts contacts--grey">
+      <section class="main-footer__contacts contacts">
         <div class="contacts__container container">
           <h2 class="visually-hidden">Контакты.</h2>
-          <div class="contacts__wrapper contacts__wrapper--grey">
+          <div class="contacts__wrapper">
             <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
             <address class="contacts__address">
               <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
@@ -199,6 +199,7 @@
         <div class="footer-links__container container">
           <h2 class="visually-hidden">Мы в социальных сетях.</h2>
           <a class="footer-links__home" href="index.html">
+            <span class="visually-hidden">Логотип Cat Energy.</span>
             <svg class="footer-links__logo" xmlns="http://www.w3.org/2000/svg" width="128" height="24" fill="currentColor">
               <use xlink:href="img/sprite.svg#footer-logo-text"></use>
             </svg>
@@ -209,7 +210,7 @@
                 <svg class="social-networks__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="currentColor">
                   <use xlink:href="img/sprite.svg#vk-icon"></use>
                 </svg>
-                <span class="visually-hidden">Логотип ВКонтакте.</span>
+                <span class="visually-hidden">Наша страница ВКонтакте.</span>
               </a>
             </li>
             <li class="social-networks__item">
@@ -217,7 +218,7 @@
                 <svg class="social-networks__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="currentColor">
                   <use xlink:href="img/sprite.svg#youtube-icon"></use>
                 </svg>
-                <span class="visually-hidden">Логотип youtube.</span>
+                <span class="visually-hidden">Наш канал на youtube.</span>
               </a>
             </li>
             <li class="social-networks__item">
@@ -225,7 +226,7 @@
                 <svg class="social-networks__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="currentColor">
                   <use xlink:href="img/sprite.svg#telegramm-icon"></use>
                 </svg>
-                <span class="visually-hidden">Логотип телеграмм.</span>
+                <span class="visually-hidden">Наш канал в телеграмм.</span>
               </a>
             </li>
           </ul>
