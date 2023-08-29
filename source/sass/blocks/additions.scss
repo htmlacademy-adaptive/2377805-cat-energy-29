@@ -36,7 +36,7 @@
 }
 
 .additions__ads-wrapper {
-  height: 290px;
+  min-height: 290px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -47,7 +47,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 200px;
+    min-height: 200px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-tablet.jpg");
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 288px;
+    min-height: 288px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-desktop.jpg");
     width: 245px;
 

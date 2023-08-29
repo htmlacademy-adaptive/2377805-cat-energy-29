@@ -25,7 +25,7 @@
     position: relative;
 
     @media (min-width: $tablet-width) {
-      margin-top: 41px;
+      margin-top: 81px;
     }
 
     @media (min-width: $desktop-width) {
@@ -60,7 +60,7 @@
     flex-direction: column;
     row-gap: 22px;
     align-items: stretch;
-    background-image: linear-gradient($basic-white 0, $basic-white 41px, #f2f2f2 41px, #f2f2f2 100%);
+    background-image: linear-gradient($basic-white 0, $basic-white 81px, #f2f2f2 81px, #f2f2f2 100%);
     min-height: 100%;
     box-sizing: border-box;
   }
@@ -103,6 +103,7 @@
         height: 60px;
         top: 50px;
         background-size: cover;
+        background-image: url("../img/show-more-catalog-tablet.svg");
       }
     }
   }
@@ -123,7 +124,7 @@
 
     @media (min-width: $tablet-width) {
       padding: 0 57px;
-      justify-content: flex-end;
+      justify-content: flex-start;
     }
 
     @media (min-width: $desktop-width) {

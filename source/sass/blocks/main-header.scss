@@ -65,9 +65,11 @@
 }
 
 .main-header__link {
-  position: relative;
-
   @include transition (opacity);
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -89,13 +91,14 @@
 
 .main-header__logo-name {
   position: absolute;
-  left: 89px;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   display: block;
 
   @media (min-width: $tablet-width) {
     left: 73px;
+    transform: translate(0, -50%);
   }
 }
 
