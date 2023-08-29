@@ -110,6 +110,11 @@ export const sprite = () => {
     .pipe(gulp.dest('build/img'))
 }
 
+export const spriteDev = () => {
+  return gulp.src('build/img/sprite.svg')
+  .pipe(gulp.dest('source/img'))
+}
+
 
 // Copy
 
@@ -168,6 +173,7 @@ export const build = gulp.series(
     scripts,
     svg,
     sprite,
+    spriteDev,
     createWebp
   )
 );
@@ -184,6 +190,7 @@ export default gulp.series(
     scripts,
     svg,
     sprite,
+    spriteDev,
     createWebp
   ),
   gulp.series(
