@@ -29,10 +29,6 @@
   @media (min-width: $tablet-width) {
     @include font-size-height (60px, 60px);
   }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 110px;
-  }
 }
 
 .advantages__list {
