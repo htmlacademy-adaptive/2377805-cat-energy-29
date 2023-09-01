@@ -4,7 +4,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 53px 52px;
+    padding: 77px 316px 57px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,7 +83,7 @@
 
   @include font-size-height (24px, 37px);
   text-transform: uppercase;
-  margin: 0 0 29px 90px;
+  margin: 0 0 29px 70px;
 
   @media (min-width: $tablet-width) {
     @include font-size-height (36px, 36px);
@@ -96,7 +96,7 @@
 }
 
 .program-item__description {
-  margin: 0 0 38px 0;
+  margin: 0 0 41px 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -125,7 +125,7 @@
   color: $basic-black;
   text-transform: uppercase;
 
-  @include font-size-height (16px, 16px);
+  @include font-size-height (16px, 20px);
   font-family: $osvald-font;
   padding: 4px 47px 4px 0;
   position: relative;

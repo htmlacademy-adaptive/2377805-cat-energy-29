@@ -53,8 +53,8 @@
   text-align: center;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) translateY(60%);
-  bottom: 0;
+  transform: translateX(-52%) translateY(60%);
+  bottom: -1px;
 
   @include font-size-height (12px, 12px);
 

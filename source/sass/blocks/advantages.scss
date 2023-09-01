@@ -39,7 +39,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 32px;
     display: grid;
-    column-gap: 137px;
+    column-gap: 134px;
     row-gap: 37px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -147,6 +147,8 @@
 
     @media (min-width: $tablet-width) {
       top: 40px;
+      width: 80px;
+      height: 80px;
     }
   }
 

@@ -12,6 +12,7 @@
     gap: unset;
     padding-top: 55px;
     padding-bottom: 55px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,9 +25,13 @@
   position: relative;
   width: 100%;
   text-align: center;
+  color: $third-black;
+  line-height: 10px;
+
+  @include transition (color);
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    width: 164px;
     text-align: start;
   }
 
@@ -41,12 +46,6 @@
       display: none;
     }
   }
-}
-
-.footer-links__logo {
-  color: $third-black;
-
-  @include transition (color);
 
   &:hover {
     color: #3e3e3e;
@@ -56,6 +55,7 @@
     color: #6b6b6b;
   }
 }
+
 
 .footer-links__socials {
   position: relative;
@@ -74,7 +74,10 @@
   }
 }
 
-.footer-links__academy-wrapper {
+.footer-links__academy-link {
+  @include font-size-height (16px, 20px);
+  text-decoration: none;
+  color: $dark-grey;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,12 +100,6 @@
       color: $basic-green;
     }
   }
-}
-
-.footer-links__academy-link {
-  @include font-size-height (16px, 20px);
-  text-decoration: none;
-  color: $dark-grey;
 }
 
 .footer-links__academy-logo {

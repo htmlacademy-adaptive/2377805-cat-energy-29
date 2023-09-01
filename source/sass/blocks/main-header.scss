@@ -54,13 +54,10 @@
   }
 }
 
-.main-header__wrapper {
+.main-header__nav {
   @media (min-width: $tablet-width) {
-    margin: 0 176px 0 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
+    align-self: flex-start;
+    padding-top: 14px;
   }
 }
 
@@ -87,6 +84,11 @@
     width: 60px;
     height: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 59px;
+  }
 }
 
 .main-header__logo-name {
@@ -99,6 +101,10 @@
   @media (min-width: $tablet-width) {
     left: 73px;
     transform: translate(0, -50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 84px;
   }
 }
 
@@ -138,7 +144,7 @@
   border-bottom: 1px solid $basic-black;
   top: 0;
   left: 0;
-  transform: rotate(0) translateY(-7px);
+  transform: rotate(0) translateY(-9px);
 
   @include transition (transform);
 }

@@ -60,6 +60,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-height (20px, 26px);
+    align-self: center;
   }
 }
 
@@ -80,7 +81,10 @@
 }
 
 .contacts__street {
+  @include font-size-height (14px, 20px);
+
   @media (min-width: $tablet-width) {
+    @include font-size-height (16px, 20px);
     display: inline-block;
     margin-bottom: 20px;
   }

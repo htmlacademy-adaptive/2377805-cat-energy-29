@@ -15,7 +15,7 @@
     width: unset;
     display: flex;
     justify-content: flex-end;
-    gap: 23px;
+    gap: 33px;
   }
 }
 
@@ -81,6 +81,7 @@
     @media (min-width: $tablet-width) {
       border-top: none;
       border-bottom: none;
+      padding-right: 4px;
     }
   }
 
@@ -92,10 +93,11 @@
     &::before {
       @media (min-width: $tablet-width) {
         @include pseudo;
-        left: 5px;
+        left: 0;
         bottom: -9px;
-        border: 1px solid $basic-green;
-        width: calc(100% - 10px);
+        border-top: 1px solid $basic-green;
+        border-bottom: 1px solid $basic-green;
+        width: 100%;
       }
 
       @media (min-width: $desktop-width) {
@@ -122,7 +124,7 @@
   text-decoration: none;
   color: $basic-black;
   height: 100%;
-  padding: 0 5px;
+  letter-spacing: 0.06px;
 
   @media (min-width: $tablet-width) {
     min-width: unset;
