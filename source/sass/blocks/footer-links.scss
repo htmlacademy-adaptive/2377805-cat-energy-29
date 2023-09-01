@@ -31,8 +31,12 @@
   @include transition (color);
 
   @media (min-width: $tablet-width) {
-    width: 164px;
+    width: 163px;
     text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 164px;
   }
 
   &::before {

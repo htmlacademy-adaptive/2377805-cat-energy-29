@@ -49,7 +49,7 @@
   @media (min-width: $desktop-width) {
     column-gap: unset;
     row-gap: unset;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 324px 325px 325px 1fr;
     grid-template-rows: 1fr;
     padding-right: 0;
   }

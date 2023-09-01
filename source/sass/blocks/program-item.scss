@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 61px 55px 52px;
+    padding: 77px 61px 59px 52px;
   }
 
   &--slim::before {
@@ -69,8 +69,8 @@
       height: 100px;
       background-image: url("../img/pro-logo.svg");
       background-size: 134px 100px;
-      top: 47px;
-      left: 33px;
+      top: 46px;
+      left: 34px;
       right: unset;
     }
   }
@@ -159,5 +159,9 @@
   @media (min-width: $tablet-width) {
     @include font-size-height (20px, 30px);
     padding: 4px 57px 4px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 0.06px;
   }
 }

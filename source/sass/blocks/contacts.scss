@@ -16,7 +16,7 @@
 .contacts__container {
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 95px;
+    top: 94px;
     right: calc(50% + 45px);
     height: unset;
     padding: 0;
@@ -87,6 +87,10 @@
     @include font-size-height (16px, 20px);
     display: inline-block;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
   }
 }
 

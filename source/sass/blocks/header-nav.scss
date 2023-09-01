@@ -83,6 +83,10 @@
       border-bottom: none;
       padding-right: 4px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 0;
+    }
   }
 
   &--current {
@@ -102,6 +106,8 @@
 
       @media (min-width: $desktop-width) {
         border: 1px solid $basic-white;
+        left: 1.5px;
+        width: calc(100% - 3px);
       }
     }
   }
@@ -124,12 +130,13 @@
   text-decoration: none;
   color: $basic-black;
   height: 100%;
-  letter-spacing: 0.06px;
+
 
   @media (min-width: $tablet-width) {
     min-width: unset;
     height: unset;
     background-color: transparent;
+    letter-spacing: 0.06px;
   }
 
   @media (min-width: $desktop-width) {
