@@ -60,10 +60,10 @@
   }
 
   &--additions {
-    margin-bottom: 34px;
+    margin-bottom: 33px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 54px;
+      margin-bottom: 53px;
     }
 
     @media (min-width: $desktop-width) {
@@ -118,6 +118,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-height (20px, 30px);
+    gap: 14px;
   }
 }
 
@@ -183,7 +184,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
     flex-direction: row;
-    gap: 64px;
+    position: relative;
   }
 
   @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
@@ -191,20 +192,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 80px;
+    margin-bottom: 77px;
   }
 }
 
 .form__button {
   border: none;
   width: 100%;
-  padding: 14px 44px;
+  padding: 10px 15px;
 
   @include font-size-height (16px, 20px);
 
   @media (min-width: $tablet-width) {
-    width: unset;
-    padding: 14px 45px;
+    width: 284px;
+    padding: 14px 15px;
 
     @include font-size-height (20px, 26px);
   }
@@ -222,5 +223,12 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-height (16px, 16px);
+    position: absolute;
+    top: 16px;
+    left: 411px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 757px;
   }
 }
