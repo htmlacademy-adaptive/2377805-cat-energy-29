@@ -1,10 +1,13 @@
 .hero {
   color: $basic-white;
   font-family: $osvald-font;
-  background-image: linear-gradient(rgb(99, 166, 59,), rgb(99, 166, 59,));
+  background-image: linear-gradient(to top, $basic-white 0, $basic-white 178px, rgb(99, 166, 59,) 178px, rgb(99, 166, 59,) 100%);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% 302px;
+
+  @media (min-width: 558px) {
+    background-image: linear-gradient(to top, $basic-white 0, $basic-white 142px, rgb(99, 166, 59,) 142px, rgb(99, 166, 59,) 100%);
+  }
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
@@ -12,10 +15,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(rgb(99, 166, 59,), rgb(99, 166, 59,));
+    background-image: linear-gradient(to top, $basic-white 0, $basic-white 52px, rgb(99, 166, 59,) 52px, rgb(99, 166, 59,) 100%);
     background-repeat: no-repeat;
     background-position: top left 50vw;
-    background-size: 100% 694px;
   }
 }
 
@@ -43,7 +45,7 @@
     padding-bottom: 52px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center right;
     background-size: 720px 694px;
 
     @media (min-resolution: 2dppx) {
@@ -75,11 +77,13 @@
 .hero__slogan {
   margin: 0 0 29px 0;
   text-transform: uppercase;
+  text-align: center;
 
   @include font-size-height (14px, 14px);
 
   @media (min-width: $tablet-width) {
     margin: 0 0 50px 90px;
+    text-align: unset;
 
     @include font-size-height (20px, 20px);
   }

@@ -85,12 +85,12 @@
 
 .addition-item__button {
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 20px;
 
   @include font-size-height (16px, 20px);
 
   @media (min-width: $tablet-width) {
-    padding: 8px 0;
+    padding: 8px 20px;
 
     @include font-size-height (16px, 24px);
   }

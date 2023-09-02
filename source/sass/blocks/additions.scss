@@ -71,7 +71,7 @@
 .additions__ads {
   color: $basic-white;
   margin: 0 61px 0 58px;
-  width: 161px;
+  min-width: 161px;
   text-align: center;
 
   @include font-size-height (16px, 20px);
@@ -79,6 +79,8 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
+    min-width: unset;
+    width: 161px;
     margin: 0 0 0 135px;
     padding: 70px 0 69px 0;
     text-align: left;

@@ -18,7 +18,6 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 56px;
 
   @media (min-width: $tablet-width) {
     height: 72px;
@@ -28,7 +27,6 @@
 .example-statistic__measure {
   margin: 0;
   width: 122px;
-  height: 54px;
   text-align: center;
 
   @include font-size-height (24px, 54px);
