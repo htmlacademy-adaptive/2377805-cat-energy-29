@@ -16,7 +16,7 @@
 .contacts__container {
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 95px;
+    top: 94px;
     right: calc(50% + 45px);
     height: unset;
     padding: 0;
@@ -32,7 +32,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 60px 40px;
-    grid-template-columns: minmax(163px, 300px) minmax(308px, 1fr) minmax(157px, 300px);
+    grid-template-columns: minmax(163px, 350px) minmax(308px, 1fr) minmax(157px, 300px);
   }
 
   @media (min-width: $desktop-width) {
@@ -60,6 +60,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-height (20px, 26px);
+    align-self: center;
   }
 }
 
@@ -80,9 +81,16 @@
 }
 
 .contacts__street {
+  @include font-size-height (14px, 20px);
+
   @media (min-width: $tablet-width) {
+    @include font-size-height (16px, 20px);
     display: inline-block;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
   }
 }
 

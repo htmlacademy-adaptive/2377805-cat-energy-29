@@ -1,10 +1,13 @@
 .hero {
   color: $basic-white;
   font-family: $osvald-font;
-  background-image: linear-gradient(rgb(99, 166, 59,), rgb(99, 166, 59,));
+  background-image: linear-gradient(to top, $basic-white 0, $basic-white 178px, rgb(99, 166, 59,) 178px, rgb(99, 166, 59,) 100%);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% 305px;
+
+  @media (min-width: 558px) {
+    background-image: linear-gradient(to top, $basic-white 0, $basic-white 142px, rgb(99, 166, 59,) 142px, rgb(99, 166, 59,) 100%);
+  }
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
@@ -12,10 +15,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(rgb(99, 166, 59,), rgb(99, 166, 59,));
+    background-image: linear-gradient(to top, $basic-white 0, $basic-white 52px, rgb(99, 166, 59,) 52px, rgb(99, 166, 59,) 100%);
     background-repeat: no-repeat;
     background-position: top left 50vw;
-    background-size: 100% 694px;
   }
 }
 
@@ -26,7 +28,7 @@
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 320px 305px;
+  background-size: 320px 302px;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-mobile@2x.jpg");
@@ -60,7 +62,7 @@
   @include font-size-height (36px, 36px);
 
   @media (min-width: $tablet-width) {
-    margin: 40px 0 40px 90px;
+    margin: 40px 200px 40px 90px;
     text-align: unset;
 
     @include font-size-height (60px, 60px);
@@ -68,18 +70,20 @@
 
   @media (min-width: $desktop-width) {
     width: 420px;
-    margin: 119px 0 40px 80px;
+    margin: 81px 0 40px 80px;
   }
 }
 
 .hero__slogan {
   margin: 0 0 29px 0;
   text-transform: uppercase;
+  text-align: center;
 
   @include font-size-height (14px, 14px);
 
   @media (min-width: $tablet-width) {
     margin: 0 0 50px 90px;
+    text-align: unset;
 
     @include font-size-height (20px, 20px);
   }
@@ -111,15 +115,17 @@
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  padding: 8px 44px;
+  padding: 10px 44px;
   display: block;
+
+  @include font-size-height (16px, 20px);
 
   @media (min-width: $tablet-width) {
     width: 244px;
     padding: 14px 26px;
     margin: 0 0 526px 90px;
 
-    @include font-size-height (20px, 20px);
+    @include font-size-height (20px, 26px);
   }
 
   @media (min-width: $desktop-width) {

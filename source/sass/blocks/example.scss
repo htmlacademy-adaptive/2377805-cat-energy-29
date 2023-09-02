@@ -21,7 +21,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
-    padding-bottom: 85px;
+    padding-bottom: 75px;
     display: grid;
     grid-template-columns: 1fr 560px;
     gap: 227px;
@@ -96,6 +96,7 @@
     @include font-size-height (20px, 20px);
     width: 174px;
     text-align: right;
+    letter-spacing: 0.11px;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,8 +106,15 @@
 }
 
 .example__expences-price {
+  margin: 0 0 0 3.5px;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    margin: 9px 0 0 0;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-left: 63px;
+    margin: 0 0 0 63px;
   }
 }
 

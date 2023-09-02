@@ -60,10 +60,10 @@
   }
 
   &--additions {
-    margin-bottom: 34px;
+    margin-bottom: 33px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 54px;
+      margin-bottom: 53px;
     }
 
     @media (min-width: $desktop-width) {
@@ -118,11 +118,26 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-height (20px, 30px);
+    gap: 14px;
   }
 }
 
 .form__input {
   flex-grow: 1;
+}
+
+.form__label-icon {
+  position: absolute;
+  color: #222222;
+  right: 13px;
+  top: 14px;
+
+  @include transition (color);
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
+    top: 17px;
+  }
 }
 
 .form__fieldset-title-wrapper {
@@ -183,7 +198,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
     flex-direction: row;
-    gap: 64px;
+    gap: 57px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
@@ -191,20 +206,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 80px;
+    margin-bottom: 77px;
+    gap: 77px;
   }
 }
 
 .form__button {
   border: none;
   width: 100%;
-  padding: 14px 44px;
+  padding: 10px 15px;
 
   @include font-size-height (16px, 20px);
 
   @media (min-width: $tablet-width) {
-    width: unset;
-    padding: 14px 45px;
+    width: 284px;
+    padding: 14px 15px;
 
     @include font-size-height (20px, 26px);
   }
@@ -222,5 +238,11 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-height (16px, 16px);
+    align-self: flex-start;
+    margin-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
   }
 }

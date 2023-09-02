@@ -3,7 +3,7 @@
   text-transform: uppercase;
 
   position: absolute;
-  bottom: -199px;
+  top: 65px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -14,8 +14,9 @@
     transform: translateX(0);
     width: unset;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 23px;
+    gap: 33px;
   }
 }
 
@@ -48,7 +49,6 @@
 .header-nav__item {
   font-family: $osvald-font;
   border-top: 1px solid #e6e6e6;
-  height: 65px;
   min-width: 320px;
 
   @include font-size-height (20px, 20px);
@@ -64,7 +64,6 @@
 
   @media (min-width: $tablet-width) {
     border-top: none;
-    height: unset;
     min-width: unset;
 
     @include font-size-height (18px, 24px);
@@ -81,6 +80,11 @@
     @media (min-width: $tablet-width) {
       border-top: none;
       border-bottom: none;
+      padding-right: 4px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 0;
     }
   }
 
@@ -92,14 +96,17 @@
     &::before {
       @media (min-width: $tablet-width) {
         @include pseudo;
-        left: 5px;
+        left: 0;
         bottom: -9px;
-        border: 1px solid $basic-green;
-        width: calc(100% - 10px);
+        border-top: 1px solid $basic-green;
+        border-bottom: 1px solid $basic-green;
+        width: 100%;
       }
 
       @media (min-width: $desktop-width) {
         border: 1px solid $basic-white;
+        left: 1.5px;
+        width: calc(100% - 3px);
       }
     }
   }
@@ -121,13 +128,14 @@
   text-align: center;
   text-decoration: none;
   color: $basic-black;
-  height: 100%;
-  padding: 0 5px;
+  min-height: 65px;
+
 
   @media (min-width: $tablet-width) {
     min-width: unset;
-    height: unset;
+    min-height: unset;
     background-color: transparent;
+    letter-spacing: 0.06px;
   }
 
   @media (min-width: $desktop-width) {

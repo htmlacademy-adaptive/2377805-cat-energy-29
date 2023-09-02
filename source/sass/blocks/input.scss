@@ -3,7 +3,7 @@
 
   @include font-size-height (16px, 18px);
   text-transform: uppercase;
-  padding: 14px 15px 13px;
+  padding: 13px 15px 12px;
   border: 1px solid #e7e7e7;
 
   @include transition (border);
@@ -13,7 +13,7 @@
     border: 1px solid $dark-grey;
     box-shadow: 0 0 0 1px $dark-grey;
 
-    & + .input__logo {
+    & + .form__label-icon {
       color: $basic-green;
     }
   }
@@ -21,14 +21,14 @@
   &:invalid {
     border: 1px solid #ff8282;
 
-    & + .input__logo {
+    & + .form__label-icon {
       color: #ff8282;
     }
   }
 
   @media (min-width: $tablet-width) {
     @include font-size-height (20px, 30px);
-    padding: 11px 20px;
+    padding: 10px 18px;
   }
 
   &::placeholder {
@@ -44,6 +44,10 @@
   &--email {
     padding-right: 48px;
 
+    @media (min-width: $tablet-width) {
+      padding-left: 19px;
+    }
+
     @media (min-width: $desktop-width) {
       width: 494px;
       box-sizing: border-box;
@@ -51,25 +55,15 @@
   }
 
   &--tel {
-    padding-right: 48px;
+    padding-right: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 19px;
+    }
 
     @media (min-width: $desktop-width) {
       width: 472px;
       box-sizing: border-box;
-    }
-  }
-
-  &__logo {
-    position: absolute;
-    color: #222222;
-    right: 13px;
-    top: 14px;
-
-    @include transition (color);
-
-    @media (min-width: $tablet-width) {
-      right: 15px;
-      top: 17px;
     }
   }
 }

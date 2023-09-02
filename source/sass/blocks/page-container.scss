@@ -1,9 +1,23 @@
 .page-container {
   flex-grow: 1;
+
+  &--addline {
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      width: 100%;
+      border-top: 1px solid #d9d9d9;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
 }
 
 .page-container__title-wrapper {
-  margin: 27px auto 41px;
+  margin: 28px auto 40px;
 
   @media (min-width: $tablet-width) {
     margin: 40px auto 84px;
@@ -14,10 +28,10 @@
   }
 
   &--form {
-    margin: 27px auto 37px;
+    margin: 28px auto 39px;
 
     @media (min-width: $tablet-width) {
-      margin: 41px auto 66px;
+      margin: 41px auto 65px;
     }
 
     @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
@@ -44,20 +58,21 @@
 }
 
 .page-container__description {
-  margin: 37px 0 39px 0;
+  margin: 37px 0 0 0;
   text-transform: uppercase;
   font-family: $osvald-font;
   color: $basic-black;
   width: 226px;
 
   @media (min-width: $tablet-width) {
-    margin: 54px 0 66px 0;
-    width: 323px;
+    margin: 54px 308px 0 0;
+    width: unset;
 
     @include font-size-height (20px, 30px);
   }
 
   @media (min-width: $desktop-width) {
     margin: 55px 0 66px 0;
+    width: 320px;
   }
 }

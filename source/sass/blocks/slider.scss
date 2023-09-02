@@ -39,22 +39,27 @@
 
 .slider__button {
   z-index: 3;
-  border: none;
+  border: 2px solid #666666;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   padding: 0;
-  background-color: transparent;
+  background-color: $basic-white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #666666;
-  transition-property: color, opacity;
+  transition-property: color, opacity, border;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     color: $basic-green;
+    border: 2px solid $basic-green;
 
     &::before {
       border-color: $basic-green;
@@ -63,6 +68,7 @@
 
   &:active {
     color: $basic-green;
+    border: 2px solid $basic-green;
     opacity: 0.6;
 
     &::before {
@@ -80,7 +86,6 @@
     top: -108px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1;
     transition-property: border-color, opacity;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
@@ -90,4 +95,16 @@
       top: -236px;
     }
   }
+
+  &::after {
+    @include pseudo;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: $basic-white;
+  }
+}
+
+.slider__button-icon {
+  z-index: 4;
 }

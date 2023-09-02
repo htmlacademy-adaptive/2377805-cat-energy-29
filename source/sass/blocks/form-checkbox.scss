@@ -61,13 +61,13 @@
   }
 
   &:checked + .form-checkbox__mark {
-    background-image: url("../../img/tick-checkbox.svg");
+    background-image: url("../img/tick-checkbox.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 26px 26px;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/tick-checkbox-tablet.svg");
+      background-image: url("../img/tick-checkbox-tablet.svg");
     }
   }
 }
