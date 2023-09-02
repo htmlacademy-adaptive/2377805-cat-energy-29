@@ -126,6 +126,20 @@
   flex-grow: 1;
 }
 
+.form__label-icon {
+  position: absolute;
+  color: #222222;
+  right: 13px;
+  top: 14px;
+
+  @include transition (color);
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
+    top: 17px;
+  }
+}
+
 .form__fieldset-title-wrapper {
   &--owner {
     margin-bottom: 35px;

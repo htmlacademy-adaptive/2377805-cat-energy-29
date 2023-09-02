@@ -13,7 +13,7 @@
     border: 1px solid $dark-grey;
     box-shadow: 0 0 0 1px $dark-grey;
 
-    & + .input__logo {
+    & + .form__label-icon {
       color: $basic-green;
     }
   }
@@ -21,7 +21,7 @@
   &:invalid {
     border: 1px solid #ff8282;
 
-    & + .input__logo {
+    & + .form__label-icon {
       color: #ff8282;
     }
   }
@@ -64,20 +64,6 @@
     @media (min-width: $desktop-width) {
       width: 472px;
       box-sizing: border-box;
-    }
-  }
-
-  &__logo {
-    position: absolute;
-    color: #222222;
-    right: 13px;
-    top: 14px;
-
-    @include transition (color);
-
-    @media (min-width: $tablet-width) {
-      right: 14px;
-      top: 17px;
     }
   }
 }
