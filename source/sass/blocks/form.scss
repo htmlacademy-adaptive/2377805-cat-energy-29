@@ -184,7 +184,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
     flex-direction: row;
-    position: relative;
+    gap: 57px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
@@ -193,6 +193,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 77px;
+    gap: 77px;
   }
 }
 
@@ -223,12 +224,11 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-height (16px, 16px);
-    position: absolute;
-    top: 16px;
-    left: 411px;
+    align-self: flex-start;
+    margin-top: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 757px;
+    margin-top: 17px;
   }
 }

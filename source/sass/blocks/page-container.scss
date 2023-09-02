@@ -1,5 +1,19 @@
 .page-container {
   flex-grow: 1;
+
+  &--addline {
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      width: 100%;
+      border-top: 1px solid #d9d9d9;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
 }
 
 .page-container__title-wrapper {
