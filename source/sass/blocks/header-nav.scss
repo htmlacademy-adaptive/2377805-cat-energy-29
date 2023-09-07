@@ -1,3 +1,11 @@
+.header-nav--nojs {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+  }
+}
+
 .header-nav__list {
   @include style-list-none;
   text-transform: uppercase;
@@ -32,6 +40,7 @@
   display: block;
   position: static;
   transform: translateX(0);
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     display: flex;
